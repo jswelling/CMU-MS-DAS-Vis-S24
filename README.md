@@ -7,5 +7,5 @@ To set up a Python environment for the class using conda, do:
 ```
 $ conda create --name VisClassEnv python=3.8
 $ conda activate VisClassEnv
-$ pip install ...
+$ pip install -r https://raw.githubusercontent.com/jswelling/CMU-MS-DAS-Vis-S22/main/requirements.txt
 ```
