@@ -25,9 +25,16 @@
     <script src="reveal.js/js/reveal.js"></script>
     <script src="reveal.js/plugin/markdown/marked.js"></script>
     <script src="reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="plugin/math/math.js"></script>
     <script>
         Reveal.initialize({
-            plugins: [ RevealMarkdown ]
+            math: {
+                mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+                config: 'TeX-AMS_HTML-full',
+                // pass other options into `MathJax.Hub.Config()`
+                TeX: { Macros: { RR: "{\\bf R}" } }
+            },
+            plugins: [ RevealMarkdown, RevealMath ]
         });
     </script>
 </body>
