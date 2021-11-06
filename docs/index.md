@@ -1,6 +1,6 @@
 This will be the index page of my github pages site.
 
-* [Overview](overview.md)
+* [Class Intro - Mechanics, and Why Visualization](intro_and_why_vis.html)
 * [Data Manifolds](data_manifold.html)
 * 
 
