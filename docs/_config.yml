@@ -1,4 +1,4 @@
-theme: Minima
+theme: jekyll-theme-slate
 lsi: false
 safe: true
 source: .
