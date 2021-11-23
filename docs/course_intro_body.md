@@ -72,4 +72,6 @@ idioms.
 
 <span class=tinytext>Brain connectivity, from LaPlante et al. 2014, "The ConnectomeVisualization 
 Utility: Software for Visualization of Human Brain Networks"</span>
+<span class='image60'>
 ![Part of Fig. 5 of doi:10.1371/journal.pone.0113838.g005](images/10.1371_journal.pone.0113838_fig_5.png)
+</span>
