@@ -6,3 +6,5 @@ pandas
 ipython
 ipython-genutils
 ipywidgets
+jupyterlab
+
