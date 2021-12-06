@@ -1,5 +1,6 @@
 matplotlib
 matplotlib-inline
+ipympl
 numpy
 scipy
 pandas

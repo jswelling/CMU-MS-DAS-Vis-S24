@@ -47,17 +47,14 @@ widget toolkit will handle that for us.
 
 ## Setting Things Up
 
-See [Jupyter Widgets documents](https://ipywidgets.readthedocs.io/en/latest/), especially the sections on *Installation* and *Simple Widget Introduction*.
+You'll need a Jupyter Notebook (*not* JupyterLab) running in an environment
+built using the file **requirements_ipywidgets.txt**.
+See [here](you_need_multiple_venvs.html) for installation instructions.
 
-```
-pip install ipywidgets
-```
+The [Jupyter Widgets documents](https://ipywidgets.readthedocs.io/en/latest/)
+provide full documentation.  Definitely read the *Simple Widget Introduction* and *Widget List*.
 
-or alternately,
-
-```
-conda install -c conda-forge ipywidgets
-```
+[Ipywidgets with matplotlib](https://kapernikov.com/ipywidgets-with-matplotlib/) is another excellent tutorial.
 
 
 
@@ -72,9 +69,9 @@ class web page in the data directory.
 Assuming you've cloned the class Github repo, it's easy to get Colin27
 in numpy form:
 ```
-file_path = '/home/welling/git/CMU-MS-DAS-Vis-S22/data/colin27_tlrc_161_191_151.bytes'
+file_path = '/home/welling/git/CMU-MS-DAS-Vis-S22/data/colin27_icbm_181_217_181.bytes'
 colin_tlrc = np.fromfile(file_path, dtype=np.uint8)
-colin_tlrc = np.reshape(colin_tlrc, (161, 191, 151), order='F')
+colin_tlrc = np.reshape(colin_tlrc, (181, 217, 181), order='F')
 ```
 Obviously you need to customize file_path.
 
@@ -168,7 +165,7 @@ _really grave error_.
 
 
 
-## Now Let ipywidgets Do It's Magic
+## Now Let ipywidgets Do Its Magic
 
 ```
 draw_slice_z = create_draw_slice(colin_tlrc, 2)
