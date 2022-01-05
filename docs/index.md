@@ -9,6 +9,8 @@
 * [Practical tools: ipywidgets](ipywidgets_intro.html)
 * [Why Visualization?](why_vis.html)
 * [Data Manifolds](data_manifolds.html)
+* [Marching Squares: a simple vis algorithm](marching_squares.html)
+* [Using Color](using_color.html)
 
 ### Assignments
 * [ipywidgets assignment](assignment_ipywidgets.html)
