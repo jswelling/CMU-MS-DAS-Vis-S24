@@ -28,3 +28,11 @@ All of this happens in V2 and below, I think.
 
 The visual system is by far the best way to get large amounts of data
 into someone's brain.
+
+
+
+![Bandwidths Of Sensory Processing](images/preconscious_vs_conscious_bandwidths.png)
+
+
+
+[Rebecca Barber talk on Preattentive Perception](https://www.youtube.com/watch?v=W9SMQihwZwk)
