@@ -2,12 +2,6 @@
 
 
 
-Credit where credit is due: much of this lecture, including a whole
-video appearing below, was created by Rebecca Barber of the Mary Lou
-Fulton Teacher's College at Arizona State University.
-
-
-
 ## How Do We Use Color?
 
 * Distinguishing categories- this is safe as long as the colors are
