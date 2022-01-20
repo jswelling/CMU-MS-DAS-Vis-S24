@@ -74,6 +74,14 @@ of manifold and fiber.
 
 
 
+## VTK File Formats
+An Example From 3D Scientific Vis
+
+[VTK File Format Image](https://github.com/Kitware/vtk-examples/blob/gh-pages/src/Testing/Baseline/Cxx/GeometricObjects/TestLinearCellDemo.png?raw=true)
+
+See how the data types map to manifold and fiber types?
+
+
 ## Combinations of idioms build complexity
 
 
@@ -84,13 +92,46 @@ We use three curves per scalar to show how the median and IQR vary over time.
 </span>
 
 
-![IQR time curve sketch](images/Time_Curve_Of_A_Statistical_Range.png)
-<span class='smalltext'>
+This data comes from the time course of (simulated) MRSA infections at a set
+of health care facilities.  Multiple simulations were run, and each simulation
+provides one time course per facility type.
+
+The graph was drawn with matplotlib.
+
+
 At each time point we have a collection of statistical samples.  By reducing
 the distribution at each time to a summary (Q1, median, Q3) we can map it to
 a known idiom for multiple simple scalars on a 1D manifold.
+
+
+At each time point, a collection of statistical samples.<br>
+<span class='image50'>
+![IQR time curve sketch](images/Time_Curve_Of_A_Statistical_Range.png)
 </span>
 
 
+
+## Comparing Patient Flow With Linked Stacked Bars
 ![stacked bar charts showing changes](images/stacked_bar_charts_showing_changes.png)
 
+
+The data are a set of lists of numbers.  Each set shows the number of
+patients that transferred to and from each of several health care facilities
+to a particular facility (FRAN_20201_H is a hospital).
+
+There are several such sets- measured "ground truth" and several simulation runs
+that we want to compare to ground truth.
+
+
+For each set, the manifold is discontinuous and 0-dimensional.  The fiber is
+a list of integers, one per originating health care facility.  This is a
+good match for a stacked bar chart.
+
+We do two stacked charts, one for arrivals and one for departures.
+
+
+How to relate the different sets (two stacked bar charts each)?  We draw them
+side-by-side, with connecting lines to help the visual flow.  So now we are
+using two "layers" of visual idioms.
+
+This was done with matplotlib.
