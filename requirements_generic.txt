@@ -1,11 +1,8 @@
 matplotlib
 matplotlib-inline
-ipympl
 numpy
 scipy
 pandas
 ipython
-ipython-genutils
-ipywidgets
 jupyterlab
-
+PyQt5
