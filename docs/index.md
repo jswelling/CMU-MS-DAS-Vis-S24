@@ -14,4 +14,5 @@
 
 ### Assignments
 * [ipywidgets assignment](assignment_ipywidgets.html)
+* [matplotlib assignment](assignment_matplotlib.html)
 
