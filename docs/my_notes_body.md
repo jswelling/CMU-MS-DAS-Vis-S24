@@ -13,12 +13,12 @@ First class March 15, last class April 28
 1. class intro, ipywidgets
 2. why vis, color
 3. Data Lives On Manifolds
-4. Maps
-5. Graphs
-6. The Awful Exercise?
-7. TreeMaps, etc
-8.
-9.
+4. Beyond matplotlib: ggplot, seaborn
+5. Statistical Data
+6. Maps
+7. Graphs
+8. The Awful Exercise?
+9. TreeMaps, etc
 10.
 11. VisIt 1
 12. VisIt 2
