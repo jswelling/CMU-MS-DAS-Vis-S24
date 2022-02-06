@@ -82,6 +82,7 @@ An Example From 3D Scientific Vis
 See how the data types map to manifold and fiber types?
 
 
+
 ## Combinations of idioms build complexity
 
 
