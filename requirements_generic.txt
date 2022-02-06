@@ -6,3 +6,6 @@ pandas
 ipython
 jupyterlab
 PyQt5
+plotnine
+seaborn
+
