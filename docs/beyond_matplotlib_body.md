@@ -49,6 +49,11 @@ There is a copy of the necessary data in our data directory.
 
 
 
+Attempting Minard's Graphic Using *plotnine*<br>
+![Minard's graphic reproduced using plotnine](images/minard_with_plotnine.png)
+
+
+
 plotnine and seaborn are both built on matplotlib
 
 You can use matplotlib routines to modify their output.  This is often
