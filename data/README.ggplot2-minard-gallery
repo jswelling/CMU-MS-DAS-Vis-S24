@@ -1,0 +1,9 @@
+This dataset includes the data needed to reproduce Minard's famous
+"Napoleon's Russian Campaign" visualization from 1869.  The data was
+captured from
+https://www.datavis.ca/gallery/minard/ggplot2/ggplot2-minard-gallery.zip
+on Feb. 1 2022.  https://www.datavis.ca/gallery/re-minard.php provides
+full context, including the "Re-Visions of Mard" software challenge.
+
+To use this data, un-zip the archive and find the three included .txt file.
+These can be parsed by pandas.read_csv(filename, delim_whitespace=True) .
