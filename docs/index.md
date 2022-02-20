@@ -11,7 +11,7 @@
 * [Data Manifolds](data_manifolds.html)
 * [Marching Squares: a simple vis algorithm](marching_squares.html)
 * [Using Color](using_color.html)
-* [Beyond Matplotlib](beyond_matplotlib.html)
+* [The Grammar Of Graphics](grammar_of_graphics.html)
 * [Idioms For Statistics](idioms_for_statistics.html)
 * [Maps](maps.html)
 
