@@ -44,6 +44,10 @@ What kinds of data visualization have you done in the past?
 
 What kinds have you seen elsewhere that you were impressed by?
 
+Have you ever written a Flask application, or other server-side web code?
+
+How much statistics do you know?  Linear regression? Logistic regression? LOESS?
+
 
 
 ## Data, Idioms, and Manifolds ##

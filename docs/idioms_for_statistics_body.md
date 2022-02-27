@@ -88,25 +88,20 @@ We will walk through several sections in detail.  The other sections you
 get to read as homework.
 
 Please open up **seaborn_workbook_1.ipynb** .  The generic venv should work.
+This notebook deals with general setup and styling.
 
 
+Next, we will open **seaborn_workbook_2.ipynb** and experiment with the
+material from the 
+[Function Overview](https://seaborn.pydata.org/tutorial/function_overview.html)
+section.
 
-## Walking through some components
-## Exploring Some Seaborn Features
-Let's look at a demo notebook 
 
-Some examples:
-* multiple spreadsheet records
-* multiple time series, like the California data or multiple reps of RHEA runs
+Finally, we are ready for the material we came here for.
+Open **seaborn_workbook_3.ipynb** we will work our way through:
+* [Visualizing Statistical Relationships](https://seaborn.pydata.org/tutorial/relational.html)
+* [Visualizing Distributions](https://seaborn.pydata.org/tutorial/distributions.html)
+* [Categorical Data](https://seaborn.pydata.org/tutorial/categorical.html)
+* [Regression Models](https://seaborn.pydata.org/tutorial/regression.html)
 
-Things like box plots and violin plots
 
-How to read a box plot or a violin plot
-
-How to draw one in matplotlib
-
-Support in seaborn
-
-Density estimation vs. simple histograms
-
-clustering
