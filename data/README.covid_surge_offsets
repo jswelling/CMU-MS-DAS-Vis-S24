@@ -1,0 +1,3 @@
+This table was extracted from covid19cases_test.csv using
+find_covid_peaks.ipynb, which implements a very crude algorithm
+for finding the peak dates of several COVID surge peaks.
