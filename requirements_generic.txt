@@ -8,4 +8,5 @@ jupyterlab
 PyQt5
 plotnine
 seaborn
-
+geopandas
+pyproj
