@@ -19,8 +19,9 @@ Do you have a laptop or equivalent?
 
 Can you write code on it?
 
-Any assignment I give *can* be done on your Bridges2 accounts, but
-it's entirely appropriate (and maybe easier) to do it on your laptop.
+It is entirely appropriate to use your laptop for any assignment for this class.
+Most of the assignments I give can also be done using your Bridges2 account, but
+there will be exceptions.
 
 
 
@@ -114,3 +115,20 @@ We have a <a href="https://canvas.cmu.edu/courses/26411/pages/course-intro?modul
 ## Homework Policy ##
 
 Let's take a moment to look at the [syllabus](https://canvas.cmu.edu/courses/26411/assignments/syllabus) sections on Evaluation and Late Homework.
+
+
+
+## Grading ##
+
+There will be roughly one homework assignment per week, typically due the following week.
+These assignments are meant to be submitted through Canvas.  They will all have roughly equal weight; there is no special "final project".
+
+
+In addition, each student is expected to do a very brief in-class presentation about some interesting visualization they saw in the
+outside world, with a brief description of why they thought it was well done or poorly done.  The goal here is to learn to observe
+and evaluate real-world visualizations.
+
+
+Scoring for this presentation is boolean- you either do it or you don't.  It will be worth
+the same number of points as a homework assignment.  If for any reason you feel you cannot do this assignment, please contact me
+and we will find an appropriate alternative.
