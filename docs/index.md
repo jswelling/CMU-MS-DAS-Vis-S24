@@ -14,6 +14,7 @@
 * [The Grammar Of Graphics](grammar_of_graphics.html)
 * [Idioms For Statistics](idioms_for_statistics.html)
 * [Maps](maps.html)
+* [Now We Need A Web Server](now_we_need_a_web_server.html)
 
 ### Assignments
 * [ipywidgets assignment](assignment_ipywidgets.html)

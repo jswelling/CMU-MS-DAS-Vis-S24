@@ -10,6 +10,13 @@ welling@psc.edu
 Office hours are by appointment for now, by Zoom or in person (here in 300 SC room 315).
 
 
+### Some important things about me ###
+
+* I have reduced red-green color vision, like a lot of males.
+* My hearing isn't great either, so if I say "What? What?" a lot, that's why.
+I apologize in advance.
+
+
 
 ## Equipment ##
 Do you have a laptop or equivalent?
@@ -129,6 +136,7 @@ outside world, with a brief description of why they thought it was well done or 
 and evaluate real-world visualizations.
 
 
-Scoring for this presentation is boolean- you either do it or you don't.  It will be worth
-the same number of points as a homework assignment.  If for any reason you feel you cannot do this assignment, please contact me
-and we will find an appropriate alternative.
+Scoring for this presentation is boolean- you either do it or you
+don't.  It will be worth the same number of points as a homework
+assignment.  If for any reason you feel you cannot do this assignment,
+please contact me and we will find an appropriate alternative.
