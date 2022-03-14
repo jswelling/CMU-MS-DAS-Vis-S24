@@ -86,7 +86,7 @@ inputs the starting points.  Flask has tools that can help.
 
 ## Let's spend a few minutes exploring the app.
 
-The stuff in ```{{ }}``` and ```{% %}``` is
+The stuff in ```{{ }}``` and etc. is
 [jinja templating](https://jinja.palletsprojects.com/en/3.0.x/).  Remember
 that it is evaluated *at the server*, using information provided in
 the ```render_template()``` call.
