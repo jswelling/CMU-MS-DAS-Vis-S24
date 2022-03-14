@@ -69,7 +69,7 @@ The application follows this [Flask Tutorial](https://flask.palletsprojects.com/
   by *main.py* and *index.html*
 
 
-...picture showing the setup we have built...
+![Our simple Flask application](images/Simple_Flask_Application.svg)
 
 
 You are running the server on your own local machine, and it should
@@ -122,7 +122,7 @@ that generates the matplotlib plot.
 
 ## What A Real Web Site Would Need
  
-...pictue showing the components we are missing...
+![A more complete Flask application](images/More_Complete_Flask_Application.svg)
 
 
 We would need a real web server, because Flask alone is too slow for
