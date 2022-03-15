@@ -87,6 +87,7 @@ We get our sense of 3D from multiple cues:
 * focal depth of field
 * perspective
 * lighting cues
+
 Different people weight these cues differently.
 
 
