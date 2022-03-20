@@ -120,7 +120,7 @@ draw_slice(50)
 And we wrapped it in a function for convenience.
 
 
-Let's make a _closure_ to allow setting the data volume at run time.
+One approach to elaborating this is to wrap it in a _closure_ to allow setting the data volume at run time.
 ```
 def create_draw_slice(vol):
     x = np.arange(0.0, vol.shape[0], 1)
@@ -154,14 +154,7 @@ def create_draw_slice(vol, axis=2):
         ...more code goes here...
     return func
 ```
-but that gets too long to fit on a slide.  See the example notebook.
-
-
-
-This is a good time to think about **keeping your coordinate systems
-oriented**.  It's easy to tell the top of the head from the bottom, but
-what about left/right?  Flipping left for right with actual data is a
-_really grave error_.
+but that gets too long to fit on a slide.
 
 
 
@@ -175,3 +168,17 @@ widgets.interact(draw_slice_z,
 					       max=colin_tlrc.shape[2]-1))
 ```
 ![Picture of the widget with slider](images/draw_slice_z_with_slider.png)
+
+
+
+This is a good time to think about **keeping your coordinate systems
+oriented**.  It's easy to tell the top of the head from the bottom, but
+what about left/right?  Flipping left for right with actual data is a
+_really grave error_.
+
+
+
+In this example we used a closure to create our display function, but
+as things get more involved doing it with a class becomes more
+practical.  This is the approach taken in the example notebook. Let's
+look at **widgets_and_brains.ipynb** .
