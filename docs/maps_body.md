@@ -192,6 +192,70 @@ and natural.
 
 
 
+## Distances
+
+Given two locations specified by longitude/latitude pairs, what is the
+distance between them? We can imagine three answers:
+* Straight line distance, right through the Earth
+* Great circle distance
+* In-plane distance on some map (including a projection)
+
+
+Straight line distance is pretty easy, given that the radius of the Earth
+is about 6,357 to 6,378 km, depending on where you measure.
+
+The formula is left as an exercise for the reader.
+
+
+Great circle distance is calculated using the
+[Haversine Formula](https://en.wikipedia.org/wiki/Haversine_formula) ,
+$$
+d = 2r \arcsin \left ( \sqrt{ \sin^2 \left ( \frac{\phi_2 - \phi_1}{2} \right ) + \cos ( \phi_1 ) \cos ( \phi_2 ) \sin^2 \left ( \frac{\lambda_1 - \lambda_2}{2} \right ) } \right ) 
+$$
+
+where:
+* $r$ is the radius of the (spherical) earth
+* $\lambda_1$ and $\phi_1$ are the longitude and latitude of point 1
+* $\lambda_2$ and $\phi_2$ are the longitude and latitude of point 2
+
+
+This is named for the *haversine*, something that people tabulated back
+before we had computers.
+
+$$
+hav(\theta) = \sin^2 \left ( \frac{\theta}{2} \right ) = \frac{1 - \cos(\theta)}{2}
+$$
+
+
+From Stack Overflow, here is a convenient
+[code fragment](https://stackoverflow.com/a/29546836/4821395)
+for computing a vector of haversine distances:
+```
+import numpy as np
+
+def haversine_np(lon1, lat1, lon2, lat2):
+    """
+    Calculate the great circle distance between two points
+    on the earth (specified in decimal degrees).  All args
+    must be of equal length.
+    """
+    lon1, lat1, lon2, lat2 = map(np.radians, [lon1, lat1, lon2, lat2])
+    dlon = lon2 - lon1
+    dlat = lat2 - lat1
+    a = np.sin(dlat/2.0)**2 + np.cos(lat1) * np.cos(lat2) * np.sin(dlon/2.0)**2
+    c = 2 * np.arcsin(np.sqrt(a))
+    km = 6367 * c
+    return km
+```
+
+
+For distances in the 2D projected space of a map, GeoPandas provides
+[GeoPandas.GeoSeries.distance()](https://geopandas.org/en/stable/docs/reference/api/geopandas.GeoSeries.distance.html).
+
+(see the syntax examples on that page).
+
+
+
 ## Experiments
 
 Now we try out GeoPandas using **geopandas_experiments.ipynb** .
