@@ -18,8 +18,8 @@ First class March 15, last class April 28
 5. Statistical Data, seaborn
 6. seaborn 2
 7. Maps
-8. Graphs
-9. The Awful Exercise?
+8. The Awful Exercise?
+9. Graphs
 10. D3: TreeMaps, Sankey diagrams, etc 
 11. VisIt 1
 12. VisIt 2
@@ -29,11 +29,10 @@ First class March 15, last class April 28
 ### Assignments
 1. matplotlib assignment (class 1)
 2. ipywidgets assignment (class 3)
-3. *maybe Grammar of Graphics* (class 4?)
-4. seaborn
-5. maps
-6. The Awful Exercise
-7. VisIt
+3. grammar of graphics, plus seaborn
+4. maps
+5. The Awful Exercise
+6. VisIt
 
 
 # LaTeX Math Example

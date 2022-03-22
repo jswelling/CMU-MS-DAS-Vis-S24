@@ -1,10 +1,7 @@
-## The world is full of graphics packages.
+## The Grammar Of Graphics
 
-We are trying to impose some order on visualization beyond
-"Here is a gallery of idioms. Plug in your data!"
-
-
-One thread of ideas on this is the _grammar of graphics_.  It's been
+... is an attempt to impose some structure on visualization, to make it
+more than just a collection of subroutine calls and idioms.  It's been
 through a few iterations, beginning with
 [Graph-Theoretic Scagnostics](https://www.semanticscholar.org/paper/Graph-theoretic-scagnostics-Wilkinson-Anand/8bc9868fe6c936614f7f94b01757723e9ffaaa43)
 by Wilkinson, Anand, and Grossman in 2005.
@@ -25,6 +22,12 @@ There is a full book version:
 These were implemented in **R**, the programming language.  As a result,
 this formalism isn't very Pythonic.  To translate to Python, one must
 choose between Pythonic design and pure preservation of the grammar.
+
+
+Today we have a guest presentation by Jay DePasse, my former boss (before moving on
+to more sensible jobs) and a true master of R and ggplot.  It's a beautiful implementation
+and a very flexible tool, but I can't do it justice.  Here's Jay.
+
 
 *plotnine* is a Python implementation of ggplot2.  Compare with *seaborn*,
 which is similar conceptually but more pythonic.  (More on seaborn later).

@@ -17,6 +17,8 @@
 * [Now We Need A Web Server](now_we_need_a_web_server.html)
 
 ### Assignments
-* [ipywidgets assignment](assignment_ipywidgets.html)
 * [matplotlib assignment](assignment_matplotlib.html)
+* [ipywidgets assignment](assignment_ipywidgets.html)
+* [ggplot and seaborn assignment](assignment_ggplot_and_seaborn.html)
+* [maps assignment](assignment_maps.html)
 
