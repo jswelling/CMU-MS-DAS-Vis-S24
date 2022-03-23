@@ -19,6 +19,7 @@
 ### Assignments
 * [matplotlib assignment](assignment_matplotlib.html)
 * [ipywidgets assignment](assignment_ipywidgets.html)
-* [ggplot and seaborn assignment](assignment_ggplot_and_seaborn.html)
+* [ggplot assignment](assignment_ggplot.html)
+* [seaborn assignment](assignment_seaborn.html)
 * [maps assignment](assignment_maps.html)
 

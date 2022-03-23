@@ -29,7 +29,8 @@ First class March 15, last class April 28
 ### Assignments
 1. matplotlib assignment (class 1)
 2. ipywidgets assignment (class 3)
-3. grammar of graphics, plus seaborn
+2. grammar of graphics
+3. seaborn
 4. maps
 5. The Awful Exercise
 6. VisIt
