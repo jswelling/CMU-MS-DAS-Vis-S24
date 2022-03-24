@@ -90,9 +90,12 @@ Being able to make nice-looking plots isn't enough - you need to be able to effe
 
 In both academia and industry you have to collaborate with others, make frequent (and urgent) modifications, and be able to explain and support your work
 
+
 Not nearly as simple as `collect data -> create visualization -> publish`
 
+
 `collect data -> create visualizations -> make changes based on co-authors' demands -> submit -> wait -> realize data contains errors, fix -> redo visualizations -> submit again -> wait more -> forget everthing -> respond to reviewer demands -> repeat...` 
+
 
 `...realize journal charges extra for color prints -> ...`
 
