@@ -124,9 +124,14 @@ Knuth suggests [literate programming](https://en.wikipedia.org/wiki/Literate_pro
 ![Publication Version Figure](images/VaccineChoicePubFigure.png)
 
 
-# Markdown Code
+# Manuscript Code
 
 ![Manuscript Code](images/VaccineChoiceManuscriptCode.png)
+
+
+# Manuscript Code
+
+![Manuscript Code](images/VaccineChoiceManuscriptCode2.png)
 
 
 
