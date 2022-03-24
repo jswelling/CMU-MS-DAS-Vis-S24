@@ -55,9 +55,9 @@ starting with an open-source implementation of `S` some 25 years ago.
 
 # Essential Libraries
 
-* `tidyverse` - Project by ([Hadley Wickham](https://hadley.nz/)) provides a very thoughtful and well-designed set of tools (including ggplot2).
-* `data.table` - A very efficient and powerful library built on top of R's dataframes; fast, succinct, compact, maybe just a little arcane.  ([data.table](https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html))
-* `knitr` - Dynamic report generation with better control and more polished output than jupyter notebooks ([knitr](https://github.com/yihui/knitr))
+* `tidyverse` - Project by [Hadley Wickham](https://hadley.nz/) provides a very thoughtful and well-designed set of tools (including ggplot2).
+* `data.table` - A very efficient and powerful library built on top of R's dataframes; fast, succinct, compact, maybe just a little arcane.  [data.table](https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html)
+* `knitr` - Dynamic report generation with better control and more polished output than jupyter notebooks [knitr](https://github.com/yihui/knitr)
 
 
 
@@ -99,7 +99,7 @@ Not nearly as simple as `collect data -> create visualization -> publish`
 
 # Literate Programming
 
-Knuth suggests ([literate programming](https://en.wikipedia.org/wiki/Literate_programming)) as a way to make code reproducible, reliable, accessible, and self-documenting.
+Knuth suggests [literate programming](https://en.wikipedia.org/wiki/Literate_programming) as a way to make code reproducible, reliable, accessible, and self-documenting.
 
 
 * Separate data from plotting code (ggplot)
