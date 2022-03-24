@@ -28,10 +28,12 @@ Today we have a guest presentation by Jay DePasse, my former boss (before moving
 to more sensible jobs) and a true master of R and ggplot.  It's a beautiful implementation
 and a very flexible tool, but I can't do it justice.  Here's Jay.
 
+
 # R
 
 R is a programming language for statistical computing with a long history,
 starting with an open-source implementation of `S` some 25 years ago.
+
 
 ## Good R
 
@@ -40,6 +42,7 @@ starting with an open-source implementation of `S` some 25 years ago.
 * Intuitive syntax for vectors, arrays, data frames
 * Great support for visualization: `ggplot2`
 * Interactive graphical environment through either `RStudio` or `jupyter notebooks`
+
 
 ## Bad R
 
