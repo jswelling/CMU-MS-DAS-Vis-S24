@@ -29,6 +29,7 @@ to more sensible jobs) and a true master of R and ggplot.  It's a beautiful impl
 and a very flexible tool, but I can't do it justice.  Here's Jay.
 
 
+
 # R
 
 R is a programming language for statistical computing with a long history,
@@ -76,9 +77,9 @@ ggplot is over 10 years old and has over 100 registered [extensions](https://ext
 
 # ggplot2: Practical Strengths
 
-* multivariate data visualization: easily swap variables and visualize using color, shape, facet grid, line style, and so on (without changing the data itself)
+* **multivariate data visualization**: easily swap variables and visualize using color, shape, facet grid, line style, and so on (without changing the data itself)
 * **themes**: change overall plot appearance (font, background color, labels, legends, etc) by selecting different themes
-* summary statistics including regression, curve fitting, rolling averages... 
+* **summary statistics** including regression, curve fitting, rolling averages... 
 * very readable plotting code
 
 
@@ -110,22 +111,22 @@ Knuth suggests [literate programming](https://en.wikipedia.org/wiki/Literate_pro
 
 # Publication Example
 
-[![Final Manuscript](images/VaccineChoice.png)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5411677/pdf/kww229.pdf)
+![Final Manuscript](images/VaccineChoice.png)(https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5411677/pdf/kww229.pdf)
 
 
 # Development Version
 
-[![Development Version Figure](images/VaccineChoiceDevFigure.png)]
+![Development Version Figure](images/VaccineChoiceDevFigure.png)
 
 
 # Publication Version
 
-[![Publication Version Figure](images/VaccineChoicePubFigure.png)]
+![Publication Version Figure](images/VaccineChoicePubFigure.png)
 
 
 # Markdown Code
 
-[![Manuscript Code](images/VaccineChoiceManuscriptCode.png)]
+![Manuscript Code](images/VaccineChoiceManuscriptCode.png)
 
 
 
