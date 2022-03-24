@@ -60,6 +60,17 @@ starting with an open-source implementation of `S` some 25 years ago.
 * `knitr` - Dynamic report generation with better control and more polished output than jupyter notebooks ([knitr](https://github.com/yihui/knitr))
 
 
+# ggplot2
+
+"system for declaratively creating graphics, based on The Grammar of Graphics. You provide the data, tell ggplot2 how to map variables to aesthetics, what graphical primitives to use, and it takes care of the details"
+
+Purists argue for the underpinning philosophy of visualization based on the rigorous grammar of graphics.
+
+In practice, you don't have to engage in the theory explicitly to take advantage of its flexibility and simplicity.
+
+ggplot is over 10 years old and has over 100 registered ([extensions](https://exts.ggplot2.tidyverse.org/gallery/))
+
+
 
 *plotnine* is a Python implementation of ggplot2.  Compare with *seaborn*,
 which is similar conceptually but more pythonic.  (More on seaborn later).
