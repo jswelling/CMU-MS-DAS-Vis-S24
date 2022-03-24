@@ -35,7 +35,7 @@ R is a programming language for statistical computing with a long history,
 starting with an open-source implementation of `S` some 25 years ago.
 
 
-## Good R
+# Good R
 
 * Many, many packages for stats, optimization, machine learning, and more
 * Efficient implementations in C, C++, Fortran, etc.
@@ -44,7 +44,7 @@ starting with an open-source implementation of `S` some 25 years ago.
 * Interactive graphical environment through either `RStudio` or `jupyter notebooks`
 
 
-## Bad R
+# Bad R
 
 * R OOP has **three** alternative class systems!
 * Inefficient/awkward program flow control
@@ -126,8 +126,6 @@ Knuth suggests [literate programming](https://en.wikipedia.org/wiki/Literate_pro
 # Markdown Code
 
 [![Manuscript Code](images/VaccineChoiceManuscriptCode.png)]
-
-
 
 
 
