@@ -28,6 +28,35 @@ Today we have a guest presentation by Jay DePasse, my former boss (before moving
 to more sensible jobs) and a true master of R and ggplot.  It's a beautiful implementation
 and a very flexible tool, but I can't do it justice.  Here's Jay.
 
+# R
+
+R is a programming language for statistical computing with a long history,
+starting with an open-source implementation of `S` some 25 years ago.
+
+## Good R
+
+* Many, many packages for stats, optimization, machine learning, and more
+* Efficient implementations in C, C++, Fortran, etc.
+* Intuitive syntax for vectors, arrays, data frames
+* Great support for visualization: `ggplot2`
+* Interactive graphical environment through either `RStudio` or `jupyter notebooks`
+
+## Bad R
+
+* R OOP has **three** alternative class systems!
+* Inefficient/awkward program flow control
+* Painful text manipulation
+* Not as widely popular as python; ackages for tasks outside of stats can be spotty or unavailable
+* Indexing begins with **1**
+
+
+# Essential Libraries
+
+* `tidyverse` - Project by ([Hadley Wickham](https://hadley.nz/)) provides a very thoughtful and well-designed set of tools (including ggplot2).
+* `data.table` - A very efficient and powerful library built on top of R's dataframes; fast, succinct, compact, maybe just a little arcane.  ([data.table](https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html))
+* `knitr` - Dynamic report generation with better control and more polished output than jupyter notebooks ([knitr](https://github.com/yihui/knitr))
+
+
 
 *plotnine* is a Python implementation of ggplot2.  Compare with *seaborn*,
 which is similar conceptually but more pythonic.  (More on seaborn later).
