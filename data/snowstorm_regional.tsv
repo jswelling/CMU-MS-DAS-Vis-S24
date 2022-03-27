@@ -1,5 +1,4 @@
-Location	Snow Amount Potential	Chance of Seeing More Snow Than									
-	Low End Snowfall	Expected Snowfall	High End Snowfall	>=0.1"	>=1"	>=2"	>=4"	>=6"	>=8"	>=12"	>=18"
+Location	Low End Snowfall	Expected Snowfall	High End Snowfall	P>=0.1"	P>=1"	P>=2"	P>=4"	P>=6"	P>=8"	P>=12"	P>=18"
 Moon/Pittsburgh Intl Airport, PA	9	13	16	100%	100%	100%	99%	97%	91%	56%	4%
 Pittsburgh, PA	8	12	15	100%	100%	100%	99%	95%	85%	42%	1%
 Butler, PA	9	12	16	100%	100%	100%	100%	97%	91%	52%	4%
