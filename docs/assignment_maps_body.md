@@ -10,6 +10,8 @@ Notebook based on our 'generic' venv.
 
 You will need:
 ```
+%matplotlib notebook
+import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 import geopandas as gpd
@@ -27,9 +29,11 @@ This will give you weather data for the snowstorm of Jan 16 2022.
 Remember to use ```sep='\t'``` in your ```pd.read_csv``` commands.
 
 
-You will need to read the following shapefile into a GeoPandas GeoDataFrame:
+You will need to read the following shapefiles into GeoPandas GeoDataFrames:
 * tl_2021_us_county.shp
-This one is available on Canvas, to avoid problems with large binary
+* PaMunicipalities2022_01.shp
+
+These are available on Canvas, to avoid problems with large binary
 files on github.
 
 
@@ -41,7 +45,7 @@ notebook, for convenience:
 * add_area_and_label_coords()
 * plot_with_labels()
 * calc_overall_centroid()
-
+* haversine_np()  (from the lecture notes)
 
 
 ### Step 4: Set up an ortho projection for PA
@@ -87,7 +91,7 @@ the counties outside the snowstorm area.
 
 
 
-### Step 7: Plot the map
+### Step 7: Plot the snowfall map
 
 The GeoPandas page for
 [Mapping and Plotting](https://geopandas.org/en/stable/docs/user_guide/mapping.html)
@@ -96,3 +100,56 @@ sure the part of Pennsylvania the snowstorm missed appears in the
 map!
 
 Pick a color map and 'missing' color that looks reasonable to you.
+
+
+
+### Step 8: Travel distances
+
+Consider a travel loop that includes these Pennsylvania cities:
+```
+travel_towns = ['Pittsburgh',
+                'Scranton',
+		'Allentown',
+		'Philadelphia',
+		'Harrisburg',
+		'Pittsburgh']
+```
+The _PaMunicipalities2022_01.shp_ shapefile provides geodata for
+those cities, among others.
+
+
+Read in the shapefile.  If you check its CRS you will find that it
+uses a pseudo-Mercator projection, not regular longitude and latitude.
+
+Create versions with CRS given by your
+orthogonal projection and by a _Platte Carree_ projection.  You can
+create the _Platte Carree_ projection based on its EPSG number,
+which is 4326.  Add area and label coordinates to both GeoDataFrames.
+
+
+
+### Step 9: Travel Map
+
+Plot the travel cities on a map of PA in the ortho coordinate system. You
+can do this just by overlaying the plots of the full PA geometry and the
+subset of the cities geometry containing only the four cities- the Jupyter
+Notebook with draw them together if they are created in the same block.
+
+You can use the "color='colorname'" keyword argument to make their colors
+distinguishable.
+
+
+Add arrows to the map showing the travel steps.  You can use the
+representative_point() method, or the 'coords' attribute we defined
+from it.  Your map should end up looking something like this:
+![map of PA showing travel loop](images/pa_travel_loop.png)
+
+
+
+### Step 10: Loop Travel Distances
+
+Calculate the total straight-line travel distance around the loop
+using the GeoSeries.distance() function in our ortho projection.
+
+Calculate it again using the haversine distance in the _Platte Carree_
+projection.  What are some reasons why the values differ?
