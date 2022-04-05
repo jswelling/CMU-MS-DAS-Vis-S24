@@ -15,6 +15,7 @@
 * [Idioms For Statistics](idioms_for_statistics.html)
 * [Maps](maps.html)
 * [Now We Need A Web Server](now_we_need_a_web_server.html)
+* [Graphs (With Notes And Edges)](graphs_with_nodes_and_edges.html)
 
 ### Assignments
 * [matplotlib assignment](assignment_matplotlib.html)
