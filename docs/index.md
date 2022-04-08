@@ -23,4 +23,4 @@
 * [ggplot assignment](assignment_ggplot.html)
 * [seaborn assignment](assignment_seaborn.html)
 * [maps assignment](assignment_maps.html)
-
+* [graphs assignment](assignment_node_edge_graphs.html)
