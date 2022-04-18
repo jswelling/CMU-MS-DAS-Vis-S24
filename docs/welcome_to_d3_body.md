@@ -115,9 +115,50 @@ graph, setting them and modifying them to create the visualization.
 
 
 
+### Why is this necessary?
+
+It takes somewhere between 100ms and a few seconds for the browser
+to pass info to the web server and get a reply.  For fully interactive
+visualization in a browser, that's just too slow.
+
+To be fully interactive, the server needs to send the data and then
+leave the entire job of interactive display to code in the browser.
+That means it has to be javascript.
+
+
+This doesn't explain why the work of setting up the visualization isn't
+more 'packaged'.  I don't understand this.  Maybe some D3 visualizations
+are, but the ones I've looked at are not.
+
+
+
+### Let's look at an example
+
+The *d3_support* branch of our Flask server can build and dispay a
+Treemap.  Let's look in some detail at the code.
+
+The Flask side just passes data to the browser in response to the
+'submit' button.  The interesting parts are all on the browser side.
+
+
+#### Steps implemented in javascript
+
+Assuming the AJAX request for data happens successfully, the
+javascript code in the browser takes the following steps:
+* Delete the old graph.
+* Construct a new, empty SVG element inside which the new graph gets built.
+* Generate a Hierarchy, a D3 datastructure used for Treemaps and other things.
+* The *d3.treemap()* call adds info about the layout of rectangles to the Hierarchy.
+
+
+...continuing...
+
+* The rectangles and text labels get built by looping over the size and location data in the Hierarchy.
+
+Once all this is done, the Treemap appears on screen.
+
+
+
 #### Still to cover
 
-* Get the Note off the demo page!
-* logic must be in the browser to minimize response time loop
-* sequence of events: data restructure, layout, transcription to SVG
 * animation
