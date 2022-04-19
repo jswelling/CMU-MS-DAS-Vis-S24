@@ -27,7 +27,7 @@ See also [the D3 Home Page](https://d3js.org/)
 
 
 * [Treemap](https://observablehq.com/@d3/treemap)
-* [Zoomable treemap](https://observablehq.com/@d3/zoomable-treemap)
+* [Zoomable treemap](http://bl.ocks.org/ganeshv/6a8e9ada3ab7f2d88022)
 * [Sortable bar chart](https://observablehq.com/@d3/bar-chart-transitions)
 * [Force-directed graph](https://observablehq.com/@d3/force-directed-graph)
 * [Tidy tree](https://observablehq.com/@d3/tree)
@@ -158,7 +158,3 @@ javascript code in the browser takes the following steps:
 Once all this is done, the Treemap appears on screen.
 
 
-
-#### Still to cover
-
-* animation
