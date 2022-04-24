@@ -17,6 +17,7 @@
 * [Now We Need A Web Server](now_we_need_a_web_server.html)
 * [Graphs (With Nodes And Edges)](graphs_with_nodes_and_edges.html)
 * [Welcome to D3](welcome_to_d3.html)
+* [VisIt: A Tool For Scientific Visualization](visit.html)
 
 ### Assignments
 * [matplotlib assignment](assignment_matplotlib.html)
