@@ -152,10 +152,3 @@ There is an older vis tool called OpenDX that actually looks like this.
 
 ### Demo!
 
-
-
-### Yet to write
-
-* Accessing Bridges
-* The Data Model
-* Some 3D vis algorithms

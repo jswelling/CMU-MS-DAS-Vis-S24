@@ -26,3 +26,4 @@
 * [seaborn assignment](assignment_seaborn.html)
 * [maps assignment](assignment_maps.html)
 * [graphs assignment](assignment_node_edge_graphs.html)
+* [VisIt movie assignment](assignment_visit_movie.html)
