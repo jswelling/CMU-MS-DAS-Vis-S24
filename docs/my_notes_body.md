@@ -18,12 +18,11 @@ First class March 15, last class April 28
 5. Statistical Data, seaborn
 6. seaborn 2
 7. Maps
-8. The Awful Exercise?
+8. Now we need a web server!
 9. Graphs
 10. D3: TreeMaps, Sankey diagrams, etc 
 11. VisIt 1
-12. VisIt 2
-13. Guest lecture? Storytelling and dashboards?
+12. VisIt 2 - visualization algorithms
 
 
 ### Assignments
@@ -32,8 +31,9 @@ First class March 15, last class April 28
 2. grammar of graphics
 3. seaborn
 4. maps
-5. The Awful Exercise
-6. VisIt
+5. Flask exercise happens in class
+6. GraphViz
+7. VisIt
 
 
 # LaTeX Math Example

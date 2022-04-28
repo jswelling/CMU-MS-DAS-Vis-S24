@@ -19,6 +19,7 @@
 * [Welcome to D3](welcome_to_d3.html)
 * [VisIt: A Tool For Scientific Visualization](visit.html)
 * [A Bit About Scientific Visualization Algorithms](sci_vis_algorithms.html)
+* [Some Thoughts On Dashboards](dashboards.html)
 
 ### Assignments
 * [matplotlib assignment](assignment_matplotlib.html)
