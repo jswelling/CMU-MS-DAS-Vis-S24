@@ -13,6 +13,9 @@ From last year:
 * Add a 'Please Install' for GraphViz
 * Add geopy to requirements_generic.txt
 * Add a lecture component for geopy
+* Modify the in-class presentation process to include a set of
+links to preveious presentations, so we have no duplicates this time around.
+* Put out an updated syllabus that actually enumerates the course material
 
 
 Maps assignment update using geopy
