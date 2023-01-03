@@ -21,13 +21,24 @@ tree using *os.path.walk()*, but feel free to use *pathlib.Path()* instead.
 
 #### Step 2: Fix the missing parts of the code.
 
-Start by getting the following parts working:
+Start by getting *get_label* and *get_rel_paths* working.
+
 * *get_label* should take a full-length filename and return a short
   version.  Return the full name if it is 10 characters or fewer, or
   the first seven characters plus '...' if it is longer than that.
+  Note that we want the filename, not the directory name.  For input
+  like 'long/dir/path/somefile.png' the right answer is 'somefil...',
+  not 'long/dir...' .
+
+
 * *get_rel_paths* should return the relative paths to the parent
   directory and the current file.  For example, given '/foo/bar/baz/blrfl'
-  and '/foo/bar' it should return 'baz' and 'baz/blrfl'
+  and '/foo/bar' it should return 'baz' and 'baz/blrfl' .  As a special
+  case, given '/foo/bar/baz' and '/foo/bar' it should return '.' and 'baz' .
+  The '.' that gets returned in this special case will end up matching with
+  the string in the definition of *root_node* in the main body of the
+  program skeleton.
+  Look up the behavior of the python function *os.path.relpath* as an example.
 
 At this point the program should actually run.
 

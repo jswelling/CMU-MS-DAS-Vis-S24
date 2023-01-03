@@ -6,6 +6,45 @@
 * Can I find my copy of Tufte?
 
 
+From last year:
+
+* Add details on how to do git clone step.
+* Add some force to the prereqs
+* Add a 'Please Install' for GraphViz
+* Add geopy to requirements_generic.txt
+* Add a lecture component for geopy
+* Modify the in-class presentation process to include a set of
+links to preveious presentations, so we have no duplicates this time around.
+* Put out an updated syllabus that actually enumerates the course material
+
+
+Maps assignment update using geopy
+
+This was originally suggested by Charlie Chen in S22.  This
+approach assigns counties to many more of the snowfall locs
+than the current method.
+
+```
+from geopy.geocoders import Nominatim
+geolocator=Nominatim(user_agent="joel_learns_geopy")
+county = []
+for i in snow_df['Location']:
+    loc = geolocator.geocode(i + ' Pennsylvania US')
+    a = r', (.*?) County'
+    if len(re.findall(a, str(loc)))>0:
+        county_str = re.findall(a, str(loc))[0].split(" ")[-1]
+    else:
+        # Try without the suffix
+        loc = geolocator.geocode(i)
+        if len(re.findall(a, str(loc)))>0:
+            county_str = re.findall(a, str(loc))[0].split(" ")[-1]
+        else:
+            county_str = ""
+    print(i,": ",county_str)
+    county.append(county_str)
+```
+
+
 First class March 15, last class April 28
 
 13 classes in all (due to Spring Carnival)
