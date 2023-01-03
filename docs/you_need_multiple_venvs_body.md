@@ -1,0 +1,49 @@
+## There Are Multiple Python Virtual Environments For This Class ##
+
+This class uses a lot of notebook-based visualization tools, like ipywidgets
+and plotly.  They all work, but they can be very finicky about the exact
+versions of Python libraries.
+
+They don't all work together, or at least, I haven't been able to
+figure out how to make them work together.  
+
+
+
+
+## Some Things Fail In JupyterLab!
+
+I've seen some things (like ipywidgets) work in *jupyter notebook* but
+fail in *jupyter-lab*.  If I don't use JupyterLab for something, this may
+well be the reason.  YMMV.
+
+
+
+## How To Generate A Venv From Requirements
+
+Different parts of the class use different versions of libraries.
+We specify these with *requirements.txt* files.  I'll tell you which is
+appropriate for any given task.
+
+Suppose we are using the requirements file for *someproject* .  We decide to
+call this venv **someprojectEnv** .
+```
+$ conda create --name someprojectEnv python=3.8.1 pip
+$ conda activate someprojectEnv
+```
+
+
+Now the new venv exists and is active.  Load the requirements into it:
+```
+$ pip install -r requirements_someproject.txt
+```
+and let Jupyter know that this environment can be run as a kernel:
+```
+$ python -m ipykernel install --user --name=someprojectEnv
+```
+
+
+Now you should be able to start up a Jupyter notebook.
+```
+$ jupyter notebook
+```
+Don't forget to use or switch to the kernel venv you just installed!

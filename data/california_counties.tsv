@@ -1,0 +1,59 @@
+	fips	name	seat	established	established_from	general_law_or_charter	population_2020	area_sq_miles
+0	001	Alameda	Oakland	1853	Contra Costa and Santa Clara	Charter	1682353	738
+1	003	Alpine	Markleeville	1864	Amador, El Dorado, Calaveras, Mono and Tuolumne	General Law	1204	739
+2	005	Amador	Jackson	1854	Calaveras	General Law	40474	606
+3	007	Butte	Oroville	1850	'''''original'''''	Charter	211632	1640
+4	009	Calaveras	San Andreas	1850	'''''original'''''	General Law	45292	1020
+5	011	Colusa	Colusa	1850	'''''original'''''	General Law	21839	1151
+6	013	Contra Costa	Martinez	1850	'''''original'''''	General Law	1165927	720
+7	015	Del Norte	Crescent City	1857	Klamath	General Law	27743	1008
+8	017	El Dorado	Placerville	1850	'''''original'''''	Charter	191185	1712
+9	019	Fresno	Fresno	1856	Mariposa, Merced and Tulare	Charter	1008654	5963
+10	021	Glenn	Willows	1891	Colusa	General Law	28917	1315
+11	023	Humboldt	Eureka	1853	Trinity	General Law	136463	3573
+12	025	Imperial	El Centro	1907	San Diego	General Law	179702	4175
+13	027	Inyo	Independence	1866	Mono and Tulare	General Law	19016	10192
+14	029	Kern	Bakersfield	1866	Los Angeles and Tulare	General Law	909235	8142
+15	031	Kings	Hanford	1893	Tulare	General Law	152486	1390
+16	033	Lake	Lakeport	1861	Napa	General Law	68163	1258
+17	035	Lassen	Susanville	1864	Plumas and Shasta, and now defunct [[Lake County, Nevada]]	General Law	32730	4558
+18	037	Los Angeles	Los Angeles	1850	'''''original'''''	Charter	10014009	4060
+19	039	Madera	Madera	1893	Fresno	General Law	156255	2138
+20	041	Marin	San Rafael	1850	'''''original'''''	General Law	262321	520
+21	043	Mariposa	Mariposa	1850	'''''original'''''	General Law	17131	1451
+22	045	Mendocino	Ukiah	1850	'''''original'''''	General Law	91601	3509
+23	047	Merced	Merced	1855	Mariposa	General Law	281202	1929
+24	049	Modoc	Alturas	1874	Siskiyou	General Law	8700	3944
+25	051	Mono	Bridgeport	1861	Calaveras, Fresno and Mariposa	General Law	13195	3044
+26	053	Monterey	Salinas	1850	'''''original'''''	General Law	439035	3322
+27	055	Napa	Napa	1850	'''''original'''''	General Law	138019	754
+28	057	Nevada	Nevada City	1851	Yuba	General Law	102241	958
+29	059	Orange	Santa Ana	1889	Los Angeles	Charter	3186989	948
+30	061	Placer	Auburn	1851	Sacramento	Charter	404739	1407
+31	063	Plumas	Quincy	1854	Butte	General Law	19790	2554
+32	065	Riverside	Riverside	1893	San Bernardino and San Diego	General Law	2418185	7208
+33	067	Sacramento	Sacramento	1850	'''''original'''''	Charter	1585055	966
+34	069	San Benito	Hollister	1874	Monterey	General Law	64209	1389
+35	071	San Bernardino	San Bernardino	1853	Los Angeles	Charter	2181654	20062
+36	073	San Diego	San Diego	1850	'''''original'''''	Charter	3298634	4204
+37	075	San Francisco	San Francisco	1850	'''''original'''''	Charter	873965	47
+38	077	San Joaquin	Stockton	1850	'''''original'''''	General Law	779233	1399
+39	079	San Luis Obispo	San Luis Obispo	1850	'''''original'''''	General Law	282424	3304
+40	081	San Mateo	Redwood City	1856	San Francisco and Santa Cruz	Charter	764442	449
+41	083	Santa Barbara	Santa Barbara	1850	'''''original'''''	General Law	448229	2738
+42	085	Santa Clara	San Jose	1850	'''''original'''''	Charter	1936259	1291
+43	087	Santa Cruz	Santa Cruz	1850	'''''original'''''	General Law	270861	446
+44	089	Shasta	Redding	1850	'''''original'''''	General Law	182155	3786
+45	091	Sierra	Downieville	1852	Yuba	General Law	3236	953
+46	093	Siskiyou	Yreka	1852	Shasta and Klamath	General Law	44076	6287
+47	095	Solano	Fairfield	1850	'''''original'''''	General Law	453491	828
+48	097	Sonoma	Santa Rosa	1850	'''''original'''''	General Law	488863	1576
+49	099	Stanislaus	Modesto	1854	Tuolumne	General Law	552878	1495
+50	101	Sutter	Yuba City	1850	'''''original'''''	General Law	99633	603
+51	103	Tehama	Red Bluff	1856	Butte, Colusa and Shasta	Charter	65829	2951
+52	105	Trinity	Weaverville	1850	'''''original'''''	General Law	16112	3179
+53	107	Tulare	Visalia	1852	Mariposa	General Law	473117	4824
+54	109	Tuolumne	Sonora	1850	'''''original'''''	General Law	55620	2236
+55	111	Ventura	Ventura	1872	Santa Barbara	General Law	843843	1846
+56	113	Yolo	Woodland	1850	'''''original'''''	General Law	216403	1012
+57	115	Yuba	Marysville	1850	'''''original'''''	General Law	81575	630
