@@ -1,4 +1,5 @@
 ---
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 ---
 ### Ignore This Bit
 * [My Notes](my_notes.html)

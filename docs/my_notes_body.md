@@ -3,19 +3,41 @@
 * Do all students have B2 accounts? How are they accessed?
  * They are out of B2 units- need to get more from Shawn?
 * Do students run notebooks locally, or on B2/OpenAccess?
-* Can I find my copy of Tufte?
+* Do students know javascript?
+* Can students download and run something from git?
 
 
-From last year:
+<!-- .slide: data-background="#ff0000" -->
+## Color Change Demo ##
+This is just a demo of how to change slide color
+Note:
+This is a note.
 
-* Add details on how to do git clone step.
-* Add some force to the prereqs
-* Add a 'Please Install' for GraphViz
-* Add geopy to requirements_generic.txt
-* Add a lecture component for geopy
-* Modify the in-class presentation process to include a set of
-links to preveious presentations, so we have no duplicates this time around.
-* Put out an updated syllabus that actually enumerates the course material
+
+To Do:
+
+* Reorganize and insert the Tableau classes
+* Update the syllabus to include some details on topics
+
+
+To Do 2:
+* From last year:
+ * Add details on how to do git clone step.
+ * Add some force to the prereqs
+ * Add a 'Please Install' for GraphViz
+ * Add geopy to requirements_generic.txt
+ * Add a lecture component for geopy
+
+
+Class Calendar:
+
+* March 14, 16: Block 1
+* March 21, 23: Block 2
+* March 28, March 30, April 4: Block 3
+* April 6, 11: Block 4
+* April 13: no class- Spring Carnival
+* April 18, 20: Block 5
+* April 25, 27: Block 6
 
 
 Maps assignment update using geopy
@@ -52,27 +74,27 @@ First class March 15, last class April 28
 
 1. class intro, Data Lives On Manifolds
 2. why vis, using color
-3. ipywidgets, marching squares
-4. The Grammar Of Graphics.
-5. Statistical Data, seaborn
-6. seaborn 2
-7. Maps
-8. Now we need a web server!
-9. Graphs
-10. D3: TreeMaps, Sankey diagrams, etc 
-11. VisIt 1
-12. VisIt 2 - visualization algorithms
+3. Marching squares, The Grammar Of Graphics.
+4. Statistical Data, seaborn
+5. seaborn 2
+6. Maps
+7. Now we need a web server!
+8. Graphs
+9. D3: TreeMaps, Sankey diagrams, etc
+10. Tableau 1
+11. Tableau 2
+12. VisIt 1
+13. VisIt 2 - visualization algorithms
 
 
 ### Assignments
 1. matplotlib assignment (class 1)
-2. ipywidgets assignment (class 3)
-2. grammar of graphics
-3. seaborn
-4. maps
+2. grammar of graphics, seaborn (class 4)
+4. maps (class 6)
 5. Flask exercise happens in class
-6. GraphViz
-7. VisIt
+6. GraphViz (class 8)
+7. Tableau (class 10 or 11?)
+8. VisIt (class 12)
 
 
 # LaTeX Math Example
