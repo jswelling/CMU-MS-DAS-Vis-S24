@@ -112,7 +112,7 @@ We have a <a href="https://canvas.cmu.edu/courses/26411/pages/course-intro?modul
 * assignments
 * homework hand-in, unless otherwise specified
 
-...and a <a href="https://github.com/jswelling/CMU-MS-DAS-Vis-S22" target="_blank">Github page</a> for:
+...and a <a href="https://github.com/jswelling/CMU-MS-DAS-Vis-S23" target="_blank">Github page</a> for:
 * the lectures (including this one), via <a href="https://jswelling.github.io/CMU-MS-DAS-Vis-S22/" target="_blank">"github pages"</a>
 * source code and data
 * maybe group projects
