@@ -8,7 +8,7 @@ provided.  To set up a generic Python environment for the class using conda, do:
 ```
 $ conda create --name VisClassEnv python=3.8
 $ conda activate VisClassEnv
-$ pip install -r https://raw.githubusercontent.com/jswelling/CMU-MS-DAS-Vis-S22/main/requirements_generic.txt
+$ pip install -r https://raw.githubusercontent.com/jswelling/CMU-MS-DAS-Vis-S23/main/requirements_generic.txt
 $ python -m ipykernel install --user --name VisClassEnv --display-name "Python (VisClassEnv)"
 ```
 Any specific example from the class may require a different environment, but they are installed from their requirements.txt files in the same way.
