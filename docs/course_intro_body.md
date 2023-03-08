@@ -46,6 +46,12 @@ class and we will fix it.
 
 
 
+## Another Reality Check ##
+* Can you download data from Github?
+* Can you clone a Github repository and run the code in it?
+
+
+
 ## Other Experience ##
 
 What kinds of data visualization have you done in the past?
