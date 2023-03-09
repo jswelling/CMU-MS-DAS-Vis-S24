@@ -17,10 +17,11 @@ The **Manifold** is the space within which the data exists.
 
 
 The **Fiber** is the data.
-* It might be a simple scalar, like depth of snow or the density of
-Colin's head.
+* It might be a simple scalar, like depth of snow or the temperature of
+a material.
 * It might be a vector, like a velocity.
-* It might be a collection of scalars, like the columns of a spreadsheet row
+* It might be a collection of scalars, like the columns of a spreadsheet row.
+* It might be text, like the name of a city or county.
 
 
 But Are The Fiber Values Continuous?
@@ -29,7 +30,7 @@ But Are The Fiber Values Continuous?
 </span>
 
 
-The values on the fibers may very continuously, or they may not.
+The values on the fibers may vary continuously, or they may not.
 * Snow depth would be a simple continuous scalar
 * The name of a county on a map is not continuous, and can't be interpolated.
 
