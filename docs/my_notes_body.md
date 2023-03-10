@@ -15,18 +15,12 @@ This is a note.
 
 
 To Do:
-
-* Reorganize and insert the Tableau classes
-* Update the syllabus to include some details on topics
-
-
-To Do 2:
-* From last year:
- * Add details on how to do git clone step.
- * Add some force to the prereqs
- * Add a 'Please Install' for GraphViz
- * Add geopy to requirements_generic.txt
- * Add a lecture component for geopy
+* Add details on how to do git clone step. (fm last year)
+* Add some force to the prereqs (fm last year)
+* Add a 'Please Install' for GraphViz (fm last year)
+* Add geopy to requirements_generic.txt (fm last year)
+* Add a lecture component for geopy (fm last year)
+* Add a 'Please Install' for Tableau
 
 
 Class Calendar:

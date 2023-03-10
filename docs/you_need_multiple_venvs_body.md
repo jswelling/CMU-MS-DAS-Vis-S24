@@ -1,11 +1,14 @@
-## There Are Multiple Python Virtual Environments For This Class ##
+## You May Need Multiple Python Virtual Environments For This Class ##
 
-This class uses a lot of notebook-based visualization tools, like ipywidgets
-and plotly.  They all work, but they can be very finicky about the exact
-versions of Python libraries.
+This class uses a lot of notebook-based visualization tools.  The
+tools used in this course generally work well together, but they can
+be finicky about which exact versions are used.
 
-They don't all work together, or at least, I haven't been able to
-figure out how to make them work together.  
+Some others libraries (like ipywidgets and plotly) will not work
+properly in the presence of libraries used in this class to the best
+of my knowledge.
+
+The solution is to be prepared to use multiple Python virtual environments.
 
 
 
