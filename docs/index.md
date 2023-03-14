@@ -7,7 +7,8 @@
 ### Lecture Slides
 * [Class Intro and Mechanics](course_intro.html)
 * [You May Need Multiple Python Environments](you_need_multiple_venvs.html)
-* [Practical tools: ipywidgets](ipywidgets_intro.html)
+* [Thinking About Coordinates](thinking_about_coordinates.html)
+  * replaces [Practical tools: ipywidgets](ipywidgets_intro.html)
 * [Why Visualization?](why_vis.html)
 * [Data Manifolds](data_manifolds.html)
 * [Marching Squares: a simple vis algorithm](marching_squares.html)
