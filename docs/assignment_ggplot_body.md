@@ -4,7 +4,8 @@ In this assignment you will use plotnine to experiment with the
 Grammar of Graphics.  It should be possible to do the assignment in a
 jupyter notebook running the *generic_requirements.txt* environment.
 It is also possible to do this in **R** of course, and please do so if
-you would prefer.  When complete, hand in the notebook on Canvas.
+you would prefer.  When complete, hand in the notebook and an screen
+capture image of your two graphs via Canvas.
 
 
 The goal is to reproduce the Charles Minard visualization of Napoleon's march to Moscow using plotnine.
