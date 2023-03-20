@@ -26,12 +26,12 @@ To Do:
 Class Calendar:
 
 * March 14, 16: Block 1
-* March 21, 23: Block 2
-* March 28, March 30, April 4: Block 3
-* April 6, 11: Block 4
+* March 21, 23, 28: Block 2 (ggplot, seaborn)
+* March March 30, April 4: Block 3 (maps)
+* April 6, 11: Block 4 (web server, graphs)
 * April 13: no class- Spring Carnival
-* April 18, 20: Block 5
-* April 25, 27: Block 6
+* April 18, 20: Block 5 (Tableau)
+* April 25, 27: Block 6 (VisIt)
 
 
 Maps assignment update using geopy
