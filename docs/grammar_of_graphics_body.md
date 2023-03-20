@@ -24,17 +24,22 @@ this formalism isn't very Pythonic.  To translate to Python, one must
 choose between Pythonic design and pure preservation of the grammar.
 
 
-# ggplot2
+# ggplot2 is part of the [Tidyverse](https://ggplot2.tidyverse.org/)
 
 "system for declaratively creating graphics, based on The Grammar of Graphics. You provide the data, tell ggplot2 how to map variables to aesthetics, what graphical primitives to use, and it takes care of the details"
 
 
-Purists argue for the underpinning philosophy of visualization based on the rigorous grammar of graphics.
+ggplot2 embodies an important attempt to impose order and structure on
+data visualization.  Its rigorous grammar makes it more predictable than
+ad hoc visualization tools.
 
-In practice, you don't have to engage in the theory explicitly to take advantage of its flexibility and simplicity.
+In practice, you don't have to engage in the theory explicitly to take
+advantage of its flexibility and simplicity.
 
 
-ggplot is over 10 years old and has over 100 registered [extensions](https://exts.ggplot2.tidyverse.org/gallery/)
+ggplot is over 10 years old and has over 100 registered
+[extensions](https://exts.ggplot2.tidyverse.org/gallery/).  This
+modularity is a great strength!
 
 
 # ggplot2: Practical Strengths
@@ -42,7 +47,7 @@ ggplot is over 10 years old and has over 100 registered [extensions](https://ext
 * **multivariate data visualization**: <span class=smalltext>easily swap variables and visualize using color, shape, facet grid, line style, and so on (without changing the data itself)</span>
 * **themes**: <span class=smalltext>change overall plot appearance (font, background color, labels, legends, etc) by selecting different themes</span>
 * **summary statistics**: <span class=smalltext>including regression, curve fitting, rolling averages... </span>
-* very readable plotting code <span class=smalltext>if you think R is readable</span>
+* very readable plotting code <span class=smalltext>(if you think R is readable)</span>
 
 
 
