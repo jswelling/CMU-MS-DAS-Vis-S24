@@ -36,7 +36,19 @@ them both set up, putting them next to each other reproduces the original graph 
 #### Step 3: There will be some fine tuning needed.
 
 You don't have to exactly reproduce my results, but:
-* I set the text size for the city names explicitly.
-* I changed the 'breaks' for the 'survivors' aesthetic to get a better match to Minard's range of bar widths.
-* I explicitly set the width of the temperatures plot based on the limits of the cities/troops plot.
-* I stretched the display windows around so that they had about the same aspect ratios as in Minard's original.
+
+* Set the text size for the city names explicitly.
+* Change the 'breaks' for the 'survivors' aesthetic to get a better
+  match to Minard's range of bar widths.
+* Explicitly set the width of the temperatures plot based on the
+  limits of the cities/troops plot.  This is necessary so that the
+  framing looks right when you line the two plots up.
+
+
+
+#### Step 4: Make a screen capture including the two graphs
+
+Stretch the display windows around so that they have about the same
+aspect ratios as in Minard's original.  Do a screen grab to capture an
+image of your two graphs lined up, and include that when you hand in
+the assignment.
