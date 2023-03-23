@@ -26,11 +26,19 @@ To Do:
 Class Calendar:
 
 * March 14, 16: Block 1
-* March 21, 23, 28: Block 2 (ggplot, seaborn)
-* March March 30, April 4: Block 3 (maps)
-* April 6, 11: Block 4 (web server, graphs)
+* March 21: Block 1 colors, Block 2 contours and ggplot
+* March 23: Block 2 seaborn 1
+* March 28: Block 2 seaborn 2
+* March 30 Block 3 maps 1 ***needs geopy info*** ; please install GraphViz and Gephi
+* April 4: Block 3 maps 2, Block 4 web server
+* April 6: Block 4 graphs (incl Brendan/Gephi)
+
+
+Class Calendar 2:
+
+* April 11: Block 4 D3; please install Tableau
 * April 13: no class- Spring Carnival
-* April 18, 20: Block 5 (Tableau)
+* April 18, 20: Block 5 (Tableau); please install VisIt
 * April 25, 27: Block 6 (VisIt)
 
 
