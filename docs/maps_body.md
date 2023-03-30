@@ -256,6 +256,62 @@ For distances in the 2D projected space of a map, GeoPandas provides
 
 
 
+## Geocoding Addresses
+
+Sometimes you need to know the distance between two Starbucks locations.
+
+
+Obviously, big databases mapping between street addresses, business
+names, and lon/lat coordinates exist.  Can we access them?  In general
+yes, within limits set by the web service.
+
+
+[GeoPy](https://geopy.readthedocs.io/en/stable/) is an open source toolkit
+provides interfaces to several geolocation databases- Google, Baidu, etc.
+We'll be using the
+[Nominatim](https://geopy.readthedocs.io/en/stable/#nominatim) interface,
+which provides access to the
+[OpenStreetMap](https://www.openstreetmap.org/#map=5/38.007/-95.844) database.
+
+
+## You may need to install geopy
+
+Do
+```
+pip install geopy
+```
+or regenerate your venv from the current requirements_generic.txt .  geopy
+was added to the requirements file recently.
+
+
+## GeoPy Is Not A Service
+
+![GeoPy Is Not A Service](https://geopy.readthedocs.io/en/stable/_images/geopy_and_geocoding_services.svg)
+
+
+## Trying It Out
+
+Nominatim wants an 'app name' string to identify the requestor (you, with
+your current program).  Just make one up. Mine will be 'ms_das_vis'.
+```
+from geopy.geocoders import Nominatim
+
+geolocator = Nominatim(user_agent="ms_das_vis")
+location = geolocator.geocode("425 South Craig St., Pittsburgh")
+print(location.latitude, location.longitude)
+```
+
+
+You can do the opposite as well:
+```
+print(geolocator.reverse((lat, lon)))
+```
+
+
+GeoPy has many other features, including its own distance interface.
+
+
+
 ## Experiments
 
 Now we try out GeoPandas using **geopandas_experiments.ipynb** .

@@ -7,19 +7,9 @@
 * Can students download and run something from git?
 
 
-<!-- .slide: data-background="#ff0000" -->
-## Color Change Demo ##
-This is just a demo of how to change slide color
-Note:
-This is a note.
-
-
 To Do:
 * Add details on how to do git clone step. (fm last year)
 * Add some force to the prereqs (fm last year)
-* Add a 'Please Install' for GraphViz (fm last year)
-* Add geopy to requirements_generic.txt (fm last year)
-* Add a lecture component for geopy (fm last year)
 * Add a 'Please Install' for Tableau
 
 
@@ -104,3 +94,12 @@ First class March 15, last class April 28
 A sample of LaTeX math, so I remember how to do it later:
 
 `$$ J(\theta_0,\theta_1) = \sum_{i=0} $$`
+
+
+<!-- .slide: data-background="#ff0000" -->
+## Color Change Demo ##
+This is just a demo of how to change slide color
+Note:
+This is a note.
+
+
