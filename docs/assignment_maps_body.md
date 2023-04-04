@@ -16,6 +16,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import geopandas as gpd
 from pyproj import CRS
+from geopy.geocoders import Nominatim
 ```
 
 
@@ -48,6 +49,7 @@ notebook, for convenience:
 * haversine_np()  (from the lecture notes)
 
 
+
 ### Step 4: Set up an ortho projection for PA
 
 Select the geometry for Pennsylvania from the GeoDataFrame.  The
@@ -70,6 +72,25 @@ counties by:
 using the city name as the merge key.  Note that there are many cities
 for which we have no snowfall estimate, so there will be a lot of
 missing snowfall data.
+
+
+* Rather than give up
+  on those cities, you can use the Nominatim geocoder to get county
+  information for most of them, as follows.
+ * Use the geocoder to look up `{Location} Pennsylvania US` , where
+   {Location} is that entry in a particular row.
+ * Convert the result to a string.  Almost all of them are of the
+   format: "Some City, CountyName County, ..."
+
+
+ * Use the Python string _split_ method to separate that string at
+   the commas.  Find the substring that contains the word 'County'.
+   Separate off the first word of that substring.  That word will
+   be the county name.
+
+
+* Insert those county names in the dataframe where they are needed.  Some
+  may still be empty, but most cities will now have county information.
 * Prune the resulting dataframe down to only the columns you need.
 
 

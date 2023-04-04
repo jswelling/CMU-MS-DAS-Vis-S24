@@ -36,7 +36,8 @@ Maps assignment update using geopy
 
 This was originally suggested by Charlie Chen in S22.  This
 approach assigns counties to many more of the snowfall locs
-than the current method.
+than the current method.  This is Chen's regex-based method,
+with minor mods.
 
 ```
 from geopy.geocoders import Nominatim
