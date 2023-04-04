@@ -49,8 +49,11 @@ But that would not be this course.
 Graph layout is a tricky business, because the display area is 2D.  How to
 minimize overlap and crossing of graph edges?
 
+We will be working with [Gephi](https://gephi.org/), a wonderful stand-alone
+interactive graph tool.  
 
-We will be working with [Graphviz](https://graphviz.org/) , an old but
+
+We will also be working with [Graphviz](https://graphviz.org/) , an old but
 very stable and capable *non-interactive* package.  Because it can
 produce such lovely graphs and has a wide selection of *layout engines*,
 a lot of the static graphs you see on the web were made with Graphviz.
@@ -59,14 +62,12 @@ Someday, you will want to put a really lovely graph in a paper or report.
 Graphviz is the way to make that graph.
 
 
-Interactive tools exist, in the form of javascript libraries.  Operation is
-very much like D3, which we will cover soon.
+Tools for laying out graphs interactively in web browsers also exist, in
+the form of javascript libraries.  Let's look at an
+[example from D3](https://observablehq.com/@d3/force-directed-graph) .
 
 
 Interactive layout is generally force-directed.
-
-Let's look at a tiny bit of the provenance graph of the HuBMAP project,
-in the web interface to the Neo4J Graph Database.
 
 Graphical elements are made to repel eachother, in this case via
 javascript interactions.  Note that you may still have to rearrange
