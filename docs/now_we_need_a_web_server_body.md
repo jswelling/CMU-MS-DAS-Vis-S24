@@ -47,15 +47,20 @@ for what we need now.
 
 
 Please clone and install this repo:
-[https://github.com/jswelling/CMU-MS-DAS-Vis-Flask](https://github.com/jswelling/CMU-MS-DAS-Vis-Flask) . Please create a git branch, with your name in the
-branch name.
+[https://github.com/jswelling/CMU-MS-DAS-Vis-Flask](https://github.com/jswelling/CMU-MS-DAS-Vis-Flask) .
 
 
-If you give me your github ID, I'll make you a contributor on the
-repo so you can push updates to your branch.
+## Installation Steps (for Linux)
 
-Please don't push new code to the master branch of the repo.
-
+```
+git clone https://github.com/jswelling/CMU-MS-DAS-Vis-Flask
+cd CMU-MS-DAS-Vis-Flask
+conda create -n flaskEnv python=3.9 pip
+source activate flaskEnv
+pip install -r requirements.txt
+bash init_db.sh
+bash run_app.sh
+```
 
 
 ## What We Have
@@ -80,7 +85,7 @@ have fixed the security issues.**
 
 Unfortunately the details of the security issues are beyond the scope
 of this course.  Having a real SECRET_KEY and guarding against false
-inputs the starting points.  Flask has tools that can help.
+inputs are the starting points.  Flask has tools that can help.
 
 
 
