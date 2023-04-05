@@ -79,6 +79,15 @@ If the graph is actually a tree, layout becomes a lot simpler.
 
 
 
+## Guest Lecturer Brendan Honick!
+
+Brendan is a data curator and metadata librarian at the PSC.
+From previous work he has a lot of experience with Gephi.
+
+Please welcome Brendan.  This is the part for which we all installed Gephi.
+
+
+
 ### Using Our Demo App
 
 In your git clone of the
