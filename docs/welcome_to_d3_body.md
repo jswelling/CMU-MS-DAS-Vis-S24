@@ -26,10 +26,11 @@ There are many at [The ObservableHQ Gallery](https://observablehq.com/@d3/galler
 See also [the D3 Home Page](https://d3js.org/)
 
 
-* [Treemap](https://observablehq.com/@d3/treemap)
-* [Zoomable treemap](http://bl.ocks.org/ganeshv/6a8e9ada3ab7f2d88022)
-* [Sortable bar chart](https://observablehq.com/@d3/bar-chart-transitions)
 * [Force-directed graph](https://observablehq.com/@d3/force-directed-graph)
+* [Disconnected graph](https://observablehq.com/@d3/disjoint-force-directed-graph)
+* [Treemap](https://observablehq.com/@d3/treemap)
+* [Zoomable treemap](https://observablehq.com/@d3/zoomable-treemap)
+* [Sortable bar chart](https://observablehq.com/@d3/bar-chart-transitions)
 * [Tidy tree](https://observablehq.com/@d3/tree)
 * [Icicle graph (zoomable!)](https://observablehq.com/@d3/zoomable-icicle)
 * [Sankey diagram](https://observablehq.com/@d3/sankey) (see also the [HuBMAP data queue](https://software.docs.hubmapconsortium.org/data-sankey/index.html))
@@ -156,5 +157,3 @@ javascript code in the browser takes the following steps:
 * The rectangles and text labels get built by looping over the size and location data in the Hierarchy.
 
 Once all this is done, the Treemap appears on screen.
-
-
