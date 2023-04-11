@@ -91,7 +91,8 @@ Please welcome Brendan.  This is the part for which we all installed Gephi.
 ### Using Our Demo App
 
 In your git clone of the
-[CMU-MS-DAS-Vis-Flask github repo](https://github.com/jswelling/CMU-MS-DAS-Vis-Flask), check out the *graphviz-support* branch.
+[CMU-MS-DAS-Vis-Flask github repo](https://github.com/jswelling/CMU-MS-DAS-Vis-Flask),
+check out the *d3_support* branch. (This includes GraphViz support)
 
 Start it up using the run_app.sh script (or the Windows equivalent).
 
@@ -238,18 +239,9 @@ find:
   Note how nodes get scaled to keep this graph compact.
 
 
-You can view them by copying-and-pasting the file contents into the Flask
-app window, or by hot-wiring the Flask app to read from the file:
-```
-    with open('/some/file/path.dot') as f:
-        rslt = subprocess.run(cmd_l,
-                              stdin=f,
-                              capture_output=True)
-
-```
+You can view them by putting the *full path* of the file in the text window,
+selecting 'read DOT from file', and hitting 'Submit'.
 
 
 Try them with different layout engines.  **Note** that some may take a long
 time to do the layout, and you will have to zoom out to see the whole graph.
-
-
