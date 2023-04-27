@@ -80,6 +80,14 @@ For example, if 4 vertices are inside and 4 outside, here are a few of the possi
 <br>And there are 3 more 4-and-4 cases beyond these.
 
 
+These images are from Nielson, _MC*: Star Functions for Marching Cubes_; <b>IEEE Visualization 2003<b>
+
+
+There are some tricky cases.  For example, sometimes you have to use different rules for patters and their inverses:<br>
+![Marching cubes case C3 for 2 vertices in and 6 out and its inverse](images/marching_cubes_cases_c3_c19.png)
+<br>If you use the same pattern for both, pinholes appear in the surface!
+
+
 Getting the lighting correct (making the surface 'shiny') requires knowing vectors normal to
 (perpendicular to) the surface at the corner of every triangle.
 
