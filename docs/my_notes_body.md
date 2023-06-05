@@ -8,9 +8,10 @@
 
 
 To Do:
+* Great comic describing color blindness: ![A Vision in Monochrome](https://thenib.com/a-vision-in-monochrome/)
 * Add details on how to do git clone step. (fm last year)
 * Add some force to the prereqs (fm last year)
-* Add a 'Please Install' for Tableau
+
 
 
 Class Calendar:
