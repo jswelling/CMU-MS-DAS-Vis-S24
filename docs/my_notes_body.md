@@ -15,21 +15,26 @@ To Do:
 
 Class Calendar:
 
-* March 14, 16: Block 1
-* March 21: Block 1 colors, Block 2 contours and ggplot
-* March 23: Block 2 seaborn 1
-* March 28: Block 2 seaborn 2
-* March 30 Block 3 maps 1 ***needs geopy info*** ; please install GraphViz and Gephi
-* April 4: Block 3 maps 2, Block 4 web server
-* April 6: Block 4 graphs (incl Brendan/Gephi)
+Class starts Tue Jan 16 and runs through April 25 with no break.
+11AM - 12:20PM
+
+* Jan 16, 18: Block 1
+* Jan 23 (Tuesday): Block 1 colors, Block 2 contours and ggplot
+* Jan 25 (Thursday): Block 2 seaborn 1
+* Jan 30 (Tuesday): Block 2 seaborn 2
+* Feb 1 (Thursday) Block 3 maps 1 ***needs geopy info*** ; please install GraphViz and Gephi
+* Feb 6 (Tuesday): Block 3 maps 2, Block 4 web server
+* Feb 8 (Thursday): Block 4 graphs (incl Brendan/Gephi)
 
 
 Class Calendar 2:
 
-* April 11: Block 4 D3; please install Tableau
-* April 13: no class- Spring Carnival
-* April 18, 20: Block 5 (Tableau); please install VisIt
-* April 25, 27: Block 6 (VisIt)
+* Feb 13 (Tuesday): Block 4 D3; please install Tableau
+* Feb 15 (Thursday): Block 5 (Tableau); please install VisIt
+* Feb 20 (Tuesday): Block 5 (Tableau) continued
+* Feb 22 (Thursday): prev Block 6 (VisIt)
+* Feb 27 (Tuesday): Block 6 (VisIt) continued
+* Feb 29 (Thursday): ????
 
 
 Maps assignment update using geopy
