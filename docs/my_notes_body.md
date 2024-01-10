@@ -7,6 +7,22 @@
 * Can students download and run something from git?
 
 
+## Steps To Set Up Local Jekyll
+Once the repo has been cloned, jekyll has to be set up in the new
+clone.  Note that github pages need to be explicitly activated from
+the github settings tab.
+
+```
+git submodule update --init  # to pull in the reveal.js submodule
+gem install bundler -v 2.4.22
+gem install jekyll
+cd docs
+cp ~/git/CMU-MS-DAS-Vis-S23/docs/Gemfile .  # to pick up customizations
+bundle install
+bundle exec jekyll serve  # starts the server on localhost
+```
+
+
 To Do:
 * Add details on how to do git clone step. (fm last year)
 * Add some force to the prereqs (fm last year)

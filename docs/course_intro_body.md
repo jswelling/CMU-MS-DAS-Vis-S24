@@ -31,6 +31,9 @@ Most of the assignments I give can also be done using your Bridges2 account, but
 there will be exceptions.
 
 
+(I'll re-activate your Bridges account if necessary).
+
+
 
 ## Reality Checks ##
 I'm assuming that:
@@ -49,6 +52,7 @@ class and we will fix it.
 ## Another Reality Check ##
 * Can you download data from Github?
 * Can you clone a Github repository and run the code in it?
+* Can  you build a Conda or Pip environment from a requirements.txt file?
 
 
 
@@ -135,7 +139,8 @@ Let's take a moment to look at the [syllabus](https://canvas.cmu.edu/courses/342
 ## Grading ##
 
 There will be roughly one homework assignment per week, typically due the following week.
-These assignments are meant to be submitted through Canvas.  They will all have roughly equal weight; there is no special "final project".
+These assignments are meant to be submitted through Canvas.  They will all have comparable
+weight; there is no special "final project".
 
 
 In addition, each student is expected to do a very brief in-class presentation about some interesting visualization they saw in the
@@ -147,3 +152,10 @@ Scoring for this presentation is boolean- you either do it or you
 don't.  It will be worth the same number of points as a homework
 assignment.  If for any reason you feel you cannot do this assignment,
 please contact me and we will find an appropriate alternative.
+
+
+
+## ChatGPT And All That ##
+
+Yes, you could ask some LLM to write your homework code. Please just ask me for
+help instead.  I actually enjoy helping students, and you'll learn more.
