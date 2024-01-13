@@ -54,6 +54,9 @@ class and we will fix it.
 * Can you clone a Github repository and run the code in it?
 * Can  you build a Conda or Pip environment from a requirements.txt file?
 
+_Big News_ : Apparently that didn't get covered in your intro.
+Unless we get lucky and everybody knows this already, we'll be doing an emergency Git class Thursday.
+
 
 
 ## Other Experience ##
