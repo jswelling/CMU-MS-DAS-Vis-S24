@@ -8,6 +8,12 @@ Some others libraries (like ipywidgets and plotly) will not work
 properly in the presence of libraries used in this class to the best
 of my knowledge.
 
+
+This can happen with any set of Python packages, but it's more common with
+packages that try to do clever things with the Jupyter Notebook screen
+environment.  That means it may happen more in this Vis class than in your
+other classes.
+
 The solution is to be prepared to use multiple Python virtual environments.
 
 
@@ -25,13 +31,13 @@ well be the reason.  YMMV.
 
 Different parts of the class use different versions of libraries.
 We specify these with *requirements.txt* files.  I'll tell you which is
-appropriate for any given task.
+appropriate for any given task.  You'll see them in the GitHub repo.
 
 Suppose we are using the requirements file for *someproject* .  We decide to
-call this venv **someprojectEnv** .
+call this venv **someproject_env** .
 ```
-$ conda create --name someprojectEnv python=3.8.1 pip
-$ conda activate someprojectEnv
+$ conda create --name someproject_env python=3.8.1 pip
+$ conda activate someproject_env
 ```
 
 
@@ -41,7 +47,7 @@ $ pip install -r requirements_someproject.txt
 ```
 and let Jupyter know that this environment can be run as a kernel:
 ```
-$ python -m ipykernel install --user --name=someprojectEnv
+$ python -m ipykernel install --user --name=someproject_env
 ```
 
 
