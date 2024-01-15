@@ -11,6 +11,7 @@
   * replaces [Practical tools: ipywidgets](ipywidgets_intro.html)
 * [Why Visualization?](why_vis.html)
 * [Data Manifolds](data_manifolds.html)
+* [Version Control, Git And GitHub](git_and_github.html)
 * [Marching Squares: a simple vis algorithm](marching_squares.html)
 * [Using Color](using_color.html)
 * [The Grammar Of Graphics](grammar_of_graphics.html)
