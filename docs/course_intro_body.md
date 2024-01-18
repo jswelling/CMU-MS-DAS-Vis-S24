@@ -7,7 +7,7 @@
 Joel Welling
 welling@psc.edu
 
-Office hours are by appointment for now, by Zoom or in person (here in 300 SC room 315).
+Office hours are by appointment for now, by Zoom or in person (here in 300 SC room 394).
 
 
 ### Some important things about me ###
