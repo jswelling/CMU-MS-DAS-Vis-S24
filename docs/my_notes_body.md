@@ -49,8 +49,8 @@ Class starts Tue Jan 16 and runs through April 25 with no break.
 * Feb 6 (Tuesday) Block 3 maps 1; please install GraphViz and Gephi
 * Feb 8 (Thursday): Block 3 maps 2, Block 4 web server
 * Feb 13 (Tuesday): Block 4 graphs (incl Brendan/Gephi); please install Tableau
-* Feb 15 (Thursday): Block 5 (Tableau); please install VisIt
-* Feb 20 (Tuesday): Block 4 D3
+* Feb 15 (Thursday): Block 4 D3
+* Feb 20 (Tuesday): Block 5 (Tableau); please install VisIt
 * Feb 22 (Thursday): Block 5 (Tableau) continued
 
 
