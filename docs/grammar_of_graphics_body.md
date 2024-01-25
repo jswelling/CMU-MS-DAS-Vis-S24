@@ -9,6 +9,11 @@ by Wilkinson, Anand, and Grossman in 2005.
 This led to a famous book, **The Grammar of Graphics**, by Leland Wilkinson.
 
 
+### "Scagnostics" is from "Scatterplot Diagnostics"
+
+<a title="Sigbert, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:ScagnosticsExampleSplom.svg"><img width="512" alt="ScagnosticsExampleSplom" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ScagnosticsExampleSplom.svg/512px-ScagnosticsExampleSplom.svg.png"></a>
+
+
 This led to
 [A Layered Grammar of Graphics](http://vita.had.co.nz/papers/layered-grammar.pdf)
 by Hadley Wickham 
@@ -22,6 +27,7 @@ There is a full book version:
 These were implemented in **R**, the programming language.  As a result,
 this formalism isn't very Pythonic.  To translate to Python, one must
 choose between Pythonic design and pure preservation of the grammar.
+
 
 
 # ggplot2 is part of the [Tidyverse](https://ggplot2.tidyverse.org/)
@@ -40,6 +46,7 @@ advantage of its flexibility and simplicity.
 ggplot is over 10 years old and has over 100 registered
 [extensions](https://exts.ggplot2.tidyverse.org/gallery/).  This
 modularity is a great strength!
+
 
 
 # ggplot2: Practical Strengths
