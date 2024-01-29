@@ -105,3 +105,6 @@ Open **seaborn_workbook_3.ipynb** we will work our way through:
 * [Regression Models](https://seaborn.pydata.org/tutorial/regression.html)
 
 
+## Not All Layouts Are Useful!
+
+<span class='image60'>[![XKCD: Compact Graphs](images/compact_graphs_2x.png)](https://xkcd.com/2864/)</span>
