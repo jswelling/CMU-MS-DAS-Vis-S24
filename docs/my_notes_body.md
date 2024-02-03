@@ -30,6 +30,10 @@ To Do:
 * Add details on how to do git clone step, or if git hasn't been covered
   in earlier classes, do a whole git lecture.
 * Add some force to the prereqs.
+* "Where are we with matplotlib" assignment: add requirement that their
+  code should work even if the rows of the table are shuffled, and even
+  if someone handed them a table from a completely different year.  That's
+  just good practice, and it would avoid laziness in picking the minimum date.
 
 
 
