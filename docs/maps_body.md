@@ -30,7 +30,8 @@ there are many options.
 
 ## Finding Geographical Boundary Data
 There is a huge amount of data available.  Just google.  You probably want geojson
-or shapefile data (extension .shp).
+or shapefile data (extension .shp), or zip files containing shapefiles and
+related data.
 
 For all sorts of US data, try
 [The US Census TIGER database](https://www.census.gov/cgi-bin/geo/shapefiles/index.php) .
@@ -164,7 +165,7 @@ The Mercator projection (EPSG 3395) is also commonly used, and reduces distortio
 
 You'll see [WGS84](https://en.wikipedia.org/wiki/World_Geodetic_System) mentioned in many descriptions
 of projections.  This is usually a reference to the geoid, the not-quite spherical shape the Earth
-would take if it were all water.  All of these coordinate systems are made with reference to the geoid.
+would take if it were completely covered in water.  All of these coordinate systems are made with reference to the geoid.
 
 
 Finally, let's consider the Orthographic or Local Tangential projection, a
@@ -272,16 +273,6 @@ We'll be using the
 [Nominatim](https://geopy.readthedocs.io/en/stable/#nominatim) interface,
 which provides access to the
 [OpenStreetMap](https://www.openstreetmap.org/#map=5/38.007/-95.844) database.
-
-
-## You may need to install geopy
-
-Do
-```
-pip install geopy
-```
-or regenerate your venv from the current requirements_generic.txt .  geopy
-was added to the requirements file recently.
 
 
 ## GeoPy Is Not A Service
