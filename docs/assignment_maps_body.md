@@ -26,13 +26,14 @@ from geopy.geocoders import Nominatim
 You will need to read the following datasets in to Pandas DataFrames:
 * snowstorm_PA.tsv
 * PA_cities_counties.tsv
+
 This will give you weather data for the snowstorm of Jan 16 2022.
 Remember to use ```sep='\t'``` in your ```pd.read_csv``` commands.
 
 
-You will need to read the following shapefiles into GeoPandas GeoDataFrames:
-* tl_2021_us_county.shp
-* PaMunicipalities2022_01.shp
+You will need to read the following geodata files into GeoPandas GeoDataFrames:
+* tl_2021_us_county.zip
+* PaMunicipalities2022_01.zip
 
 These are available on Canvas, to avoid problems with large binary
 files on github.
@@ -135,7 +136,7 @@ travel_towns = ['Pittsburgh',
 		'Harrisburg',
 		'Pittsburgh']
 ```
-The _PaMunicipalities2022_01.shp_ shapefile provides geodata for
+The _PaMunicipalities2022_01.zip_ file provides geodata for
 those cities, among others.
 
 
