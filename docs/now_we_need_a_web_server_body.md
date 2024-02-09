@@ -35,45 +35,56 @@ people's computers, running code like your code.
 
 
 
-## Flask
+## Streamlit and Flask
 
-We will use a very lightweight web infrastructure tool called
-[Flask](https://flask.palletsprojects.com/en/2.0.x/) .  Larger tools with
-greater functionality are available (for example
-[Django](https://www.djangoproject.com/)), but for now, simplicity is best.
+There are actually two examples of web servers here, written in
+* [Flask](https://flask.palletsprojects.com/en/2.3.x/), a very pythonic, full-featured server
+* [Streamlit](https://streamlit.io/), which does much of the work for you, whether you like it or not.
 
-Note that Jupyter Notebook is itself a web server, but is not flexible enough
-for what we need now.
-
-
-Please clone and install this repo:
-[https://github.com/jswelling/CMU-MS-DAS-Vis-Flask](https://github.com/jswelling/CMU-MS-DAS-Vis-Flask) .
+There are others, like [Django](https://www.djangoproject.com/)) , which is a larger, more complex framework.
+Lots of web pages are now written in [React](https://react.dev/) .  Jupyter Notebook is itself partly a web server.
 
 
-## Installation Steps (for Linux)
+Definitely clone the class Streamlit repo, which is
+[CMU-MS-DAS-Vis-Streamlit](https://github.com/jswelling/CMU-MS-DAS-Vis-Streamlit) .  We want to run it
+today, and use it to draw GraphViz graphs.
+
+
+The class Flask repo is [CMU-MS-DAS-Vis-Flask](https://github.com/jswelling/CMU-MS-DAS-Vis-Flask) .  Clone
+and run it if you are interested; it will be used in class for examples.
+
+
+
+## Streamlit Installation Steps (for Linux)
+
+```
+git clone https://github.com/jswelling/CMU-MS-DAS-Vis-Streamlit
+cd CMU-MS-DAS-Vis-Streamlit
+conda create -n streamlitEnv python=3.10 pip
+source activate streamlitEnv
+pip install -r requirements.txt
+```
+
+
+## Flask Installation Steps (for Linux)
 
 ```
 git clone https://github.com/jswelling/CMU-MS-DAS-Vis-Flask
 cd CMU-MS-DAS-Vis-Flask
-conda create -n flaskEnv python=3.9 pip
+conda create -n flaskEnv python=3.10 pip
 source activate flaskEnv
 pip install -r requirements.txt
+git checkout d3_support  # to get all the features
 bash init_db.sh
 bash run_app.sh
 ```
 
 
-## What We Have
 
-The application follows this [Flask Tutorial](https://flask.palletsprojects.com/en/2.0.x/tutorial/) very closely, except that:
-* We are only creating the index page and the necessary code to
-  define the user.  Thus all reference to blog posts has been
-  stripped out.
-* The name of the app has changed from **Flaskr** to **MyProj**.
-* There are no more blog posts, so the index page is now provided
-  by *main.py* and *index.html*
+## What Web Servers Do
 
-
+Streamlit hides most of this, but it is still happening.  With Flask,
+all the parts are visible.
 ![Our simple Flask application](images/Simple_Flask_Application.svg)
 
 
@@ -84,12 +95,109 @@ have fixed the security issues.**
 
 
 Unfortunately the details of the security issues are beyond the scope
-of this course.  Having a real SECRET_KEY and guarding against false
-inputs are the starting points.  Flask has tools that can help.
+of this course.  Flask, having a real SECRET_KEY is necessary.  One must
+guarding against false inputs (SQL injection).  
+
+
+## A More Complete Environment
+ 
+![A more complete Flask application](images/More_Complete_Flask_Application.svg)
+
+
+We would need a real web server, because Flask or Streamlit alone is too slow for
+real traffic.  Flask or Streamlit can then run in a Python environment within that
+webserver.
+* [Apache](https://httpd.apache.org/)
+* [NGINX](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/)
+
+
+We would need https support.  A real web server would provide that,
+and automatically translate to the http which our server speaks.
+
+
+We would need a real database. We have a tiny one based on Sqlite, but
+for a serious project we would want a full-sized SQL database like:
+* [MySQL](https://www.mysql.com/)
+* [PostgreSQL](https://www.postgresql.org/)
+
+
+We would need session management.
+* In Flask: There is really no state to the sessions we have now; the visualization is completely recreated every
+  time we click 'Submit'.  A real session would allow things to be
+  remembered between page views.  Flask has plug-ins for that.
+* In Streamlit: The model is that the Python program completely re-runs every time the page gets updated.  One has
+  to manage session state by using st.session_state .  It gets awkward.
+
+
+We would need better login management.  Users should provide email
+addresses and those should be verified, for example.  Flask and
+Steamlit both have plug-ins to help with this.
 
 
 
-## Let's spend a few minutes exploring the app.
+## Exploring the Streamlit Version
+
+There are actually two separate web servers here:
+* _curveserver.py_ , the current demo
+* _graphserver.py_ , for GraphViz later
+
+Streamlit can only handle one-page websites, so they have to be separate.
+
+
+## Start up the curveserver:
+Starting in your clone of CMU-MS-DAS-Vis-Streamlit:
+```
+cd src/webserver
+conda activate streamlitEnv
+streamlit run curveserver.py
+```
+That's it; streamlit does the rest!  Now open http://localhost:8501/ and
+you should see your web page.
+
+
+## The code is really simple.
+```
+def draw_matplotlib_figure(fig, axes, label="",
+                           spines=True, log_scale=False):
+```
+This is a standard matplotlib routine that draws into a given figure
+and set of axes.  Anything based on matplotlib, like plotnine or
+seaborn, would also work.
+
+
+```
+svg_write(svg_string, center=True)
+```
+Given a string of Scalable Vector Graphics code representing a figure,
+this function just draws it on the Streamlit page using the standard
+_st.write()_ method.  It takes a few tricks but it works.
+
+
+The `main()` routine draws the page.
+
+It executes straight down, top to bottom.  You can see everything on the
+page get created.  This is really nice for simple pages, and really annoying
+when you want to add complexity.
+
+This bit grabs the image back from the Figure as SVG and sends it to the page:
+```
+    image_holder = StringIO()
+    FigureCanvasSVG(fig).print_svg(image_holder)
+    svg_write(image_holder.getvalue())
+```
+
+
+
+## Exploring The Flask Version
+
+The application follows this [Flask Tutorial](https://flask.palletsprojects.com/en/2.0.x/tutorial/) very closely, except that:
+* We are only creating the index page and the necessary code to
+  define the user.  Thus all reference to blog posts has been
+  stripped out.
+* The name of the app has changed from **Flaskr** to **MyProj**.
+* There are no more blog posts, so the index page is now provided
+  by *main.py* and *index.html*
+
 
 The stuff in ```{{ }}``` and etc. is
 [jinja templating](https://jinja.palletsprojects.com/en/3.0.x/).  Remember
@@ -125,46 +233,48 @@ that generates the matplotlib plot.
 
 
 
-## What A Real Web Site Would Need
- 
-![A more complete Flask application](images/More_Complete_Flask_Application.svg)
-
-
-We would need a real web server, because Flask alone is too slow for
-real traffic.  Flask can then run in a Python environment within that
-webserver.
-* [Apache](https://httpd.apache.org/)
-* [NGINX](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/)
-
-
-We would need https support.  A real web server would provide that,
-and automatically translate to the http which our server speaks.
-
-
-We would need a real database. We have a tiny one based on Sqlite, but
-for a serious project we would want a full-sized SQL database like:
-* [MySQL](https://www.mysql.com/)
-* [PostgreSQL](https://www.postgresql.org/)
-
-
-We would need session management.  There is really no state to the
-sessions we have now.  The visualization is completely recreated every
-time we click 'Submit'.  A real session would allow things to be
-remembered between page views.  Flask has plug-ins for that.
-
-
-We would need better login management.  Users should provide email
-addresses and those should be verified, for example.  Flask has plug-ins
-for that too.
-
-
-
 ## In-Class Exercises
 
-Change the code so that the Selector can control the line style- a line,
+Add a Streamlit *checkbox* to control the presence of a legend.  Yes, this
+could have been used instead of the *radio* widgets in the existing page.
+
+Change the radio buttons that control the presence of the upper axis lines
+to a checkbox instead.
+
+Change the code so that a Streamlit *selectbox* can control the line style- a line,
 points only, or the line plus points.
 
-Add a checkbox to control the presence of a legend.
 
-Change the checkbox that controls the presence of the upper axis lines
-to a pair of radio buttons instead.
+
+# Let's Test GraphViz
+
+If you have installed GraphViz correctly, the following command should work:
+```
+$ dot -V
+dot - graphviz version 2.43.0 (0)
+```
+That is, the `dot` command should be able to execute and print its version number.
+
+
+Check that this works *in the window where you have been running streamlit* .
+If it does, we are ready to start graphserver in that window.  If not, we
+probably have to fix your $PATH environment.
+
+
+Kill the streamlit process that is running curveserver.py, and instead run:
+```
+streamlit run graphserver.py
+```
+It may take a minute to get your web browser to recognize that the page has
+vanished and come back different.
+
+
+Once the _Graph Renderer_ appears, find the window marked 'Dot Language To Render'.
+Enter:
+```
+digraph { A->B->C->A }
+```
+and press control-Enter. Does a graph with nodes and edges appear?
+
+
+![Simple graph example](images/simple_graph_svg_example.png)
