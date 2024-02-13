@@ -79,57 +79,56 @@ If the graph is actually a tree, layout becomes a lot simpler.
 
 
 
-## Guest Lecturer Brendan Honick!
-
-Brendan is a data curator and metadata librarian at the PSC.
-From previous work he has a lot of experience with Gephi.
-
-Please welcome Brendan.  This is the part for which we all installed Gephi.
-
-
-
 ### Using Our Demo App
 
-In your git clone of the
-[CMU-MS-DAS-Vis-Flask github repo](https://github.com/jswelling/CMU-MS-DAS-Vis-Flask),
-check out the *d3_support* branch. (This includes GraphViz support)
-
-Start it up using the run_app.sh script (or the Windows equivalent).
-
-If [GraphViz](https://graphviz.org/) is installed on your laptop, you should
-now be able to enter [Dot language](https://graphviz.org/doc/info/lang.html)
-commands and see the results.
+Go to your clone of the [CMU-MS-DAS-Vis-Streamlit github repo](https://github.com/jswelling/CMU-MS-DAS-Vis-Streamlit) repo. cd down into the src/webserver directory.
 
 
-Here is a sample to try:
+If Graphviz is correctly installed, the following command should work:
+```
+$ dot -V
+dot - graphviz version 2.43.0 (0)
+```
+That is, the `dot` command should be able to execute and print its version number.
+
+
+Try the following command line:
+```
+$ echo 'digraph { a -> b }' | dot -Tpng -otest.png
+```
+This should create a png file which looks like:
+![sample png file](images/graphviz_test.png)
+
+
+Now we know we can trust Graphviz.  Let's start up the Streamlit
+server, which will call Graphviz.
+```
+$ cd src/webserver  # if you are not already there
+$ conda activate streamlitEnv
+$ streamlit run graphserver.py
+```
+
+
+The web [http://localhost:8501/](http://localhost:8501/) should now be
+available on your local machine:
+![Image of the Graphviz Streamlit page](images/streamlit_graphviz_app.png)
+
+
+If things are working, try copying the following simple graph into the "Dot Language
+To Render" box:
 ```
 digraph { A -> B -> C -> A }
 ```
+An image of the graph appears!
 
 
-Enter that on the *GraphViz Example* page and click 'submit'.  You should get
-something like:
-<span class="image60">![image of the GraphViz page](images/myproj_graphviz_page.png)</span>
+You can change the layout engine with the selector below. but it won't make a huge
+difference with this simple graph.  You can also read larger graphs from a file.
 
 
-#### How It Works
-
-The function *graphviz_form_submit()* in myproj/main.py builds and executes
-a command.  In this case the command is simply:
-```
-dot -Tsvg
-```
-
-The Dot language string is fed as standard input to the command.  The
-resulting SVG is captured, passed back to the web browser, and displayed.
-
-
-Changing the layout engine just changes the command, for example from *dot*
-to *circo* .  Try rendering this simple graph with different layout engines-
-you will see some minor differences.
-
-If you add a few nodes to the graph, the effects of the choice of layout
-engine will be more obvious.
+If you can't get the Streamlit app to work, you can still try experiments (and do
+the homework) by putting your Dot language examples in a file and using the
+Graphviz command line to convert them to graph images.
 
 
 
@@ -239,9 +238,14 @@ find:
   Note how nodes get scaled to keep this graph compact.
 
 
-You can view them by putting the *full path* of the file in the text window,
-selecting 'read DOT from file', and hitting 'Submit'.
-
-
 Try them with different layout engines.  **Note** that some may take a long
 time to do the layout, and you will have to zoom out to see the whole graph.
+
+
+
+## Guest Lecturer Brendan Honick!
+
+Brendan is a data curator and metadata librarian at the PSC.
+From previous work he has a lot of experience with Gephi.
+
+Please welcome Brendan.  This is the part for which we all installed Gephi.

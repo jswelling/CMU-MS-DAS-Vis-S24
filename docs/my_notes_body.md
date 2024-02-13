@@ -36,6 +36,12 @@ To Do:
   just good practice, and it would avoid laziness in picking the minimum date.
 
 
+To Do (2):
+* "Seaborn" assignment: be explicit that they should get the log scale by
+  using seaborn or matplotlib commands, *not* by adding a new column of
+  logarithms.
+
+
 
 ## Class Calendar:
 
