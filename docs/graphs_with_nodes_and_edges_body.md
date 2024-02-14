@@ -211,7 +211,7 @@ rendered.
 
 The *extended layout* option works the same way, but with even more info.
 
-Check the Flask code to see how to do this from the command line
+Check the Streamlit code to see how to do this from the command line
 
 
 If you specify node coordinates and edges without coordinates, **neato**
