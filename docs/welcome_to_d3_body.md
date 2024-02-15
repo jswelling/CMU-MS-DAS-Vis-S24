@@ -107,7 +107,8 @@ It looks like XML (or HTML) because it is.  When this gets inserted into
 the browser page, the individual bits of the SVG structure exist as
 separate entities in the browser DOM.
 
-Let's look at this bit of SVG in the browser's developer tools.
+Let's look at this bit of SVG in the browser's developer tools.  We have
+to use the Flask app because Streamlit hides the structure.
 
 
 We are used to javascript being able to change the normal elements of
@@ -127,13 +128,34 @@ leave the entire job of interactive display to code in the browser.
 That means it has to be javascript.
 
 
+Interactivity is *key*.  It provides a whole new channel of interaction
+with the visualization.  Consider
+[Observable's Brushable Scatterplot](https://observablehq.com/@d3/brushable-scatterplot-matrix?intent=fork) .
+That level of interaction is impossible if every action must be transmitted back to the server.
+
+
 This doesn't explain why the work of setting up the visualization isn't
 more 'packaged'.  I don't understand this.  Maybe some D3 visualizations
-are, but the ones I've looked at are not.
+are, but most of the ones I've looked at are not.
 
 
 
-### Let's look at an example
+### One easily-accessible example
+
+The [d3graph](https://github.com/erdogant/d3graph) package by
+[Erdogant](https://github.com/erdogant) is an encapsulation of the D3.js force-directed
+graph javascript in python.  Given a static graph in the form of an adjacency matrix,
+it writes and saves an HTML page to display it using D3.
+
+You can then just display that HTML.  There is even a special wrapper to show it in
+Streamlit.
+
+
+I tried for a notebook to do this last night, and almost got it working.
+
+
+
+### Let's look at the details of an example in Flask
 
 The *d3_support* branch of our Flask server can build and dispay a
 Treemap.  Let's look in some detail at the code.
