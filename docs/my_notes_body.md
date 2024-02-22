@@ -40,6 +40,9 @@ To Do (2):
 * "Seaborn" assignment: be explicit that they should get the log scale by
   using seaborn or matplotlib commands, *not* by adding a new column of
   logarithms.
+* "Maps" assignment: be explicit that travel distances should be between
+  centers.  GeoPandas will compute travel distances between boundaries but
+  it differs a *lot* from haversine.
 
 
 
