@@ -54,6 +54,10 @@ To Do (2):
 To Do (3):
 * Add a 'zoom in' before the marching squares slides, showing one square
   in the grid for context.
+* Clarify the snow depth map step of the Maps exercise to say that the
+  merge needs to be done in a way that preserves the records for which
+  the snow depth location has no matching city information in the cities
+  data.  Otherwise there is nothing for the geolocator step to do!
 
 
 
