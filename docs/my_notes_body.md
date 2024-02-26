@@ -60,6 +60,13 @@ To Do (3):
   data.  Otherwise there is nothing for the geolocator step to do!
 
 
+To Do (4):
+* Add an example to the description of get_rel_path in the GraphViz assignment
+  where if you pass the function '/foo/bar', '/foo/bar' it should return
+  ('..', '.') and not the other way around.  This case actually happens
+  at the very beginning of the iteration.
+
+
 
 ## Class Calendar:
 
