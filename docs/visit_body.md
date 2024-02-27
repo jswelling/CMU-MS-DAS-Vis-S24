@@ -94,6 +94,27 @@ company.<br>
 <span class='smalltext'>They give you the software, but they sell you the documentation.</span>
 
 
+
+## Comparisons to Tableau
+
+Tableau is also a large complex visualization app, but you'll see that
+the interaction and the design goals are very different.
+
+* Tableau strives to be web-like. VisIt is more like an app.
+* Tableau tries to do the entire world of infovis, but almost no scientific vis.
+  VisIt has the opposite goals.
+* VisIt is free and open source.
+
+
+But there are similarities.
+* Both require a database.  For Tableau, it's record-oriented.
+  VisIt uses volumes of data, or finite element models.
+* Both support multiple linked views of the same data.
+* Both are pretty complex to fully learn.
+* Both were written by large teams.
+
+
+
 #### VisIt and ParaView are very similar internally
 
 Both are based on [VTK](https://vtk.org/) .
