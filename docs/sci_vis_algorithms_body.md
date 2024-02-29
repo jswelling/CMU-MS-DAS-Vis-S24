@@ -65,6 +65,10 @@ The first (or almost first) description of 'Marching Cubes' is from William Lore
 Cline in 1987.
 
 
+Consider the full volume as a mesh of small cubes, and look at one cube at a time.
+![cube of cubes](images/cube_of_cubes.png)
+
+
 In 2D, we had 4 corners, and thus $2^4 = 16$ total cases.  That was made of a few shapes, each
 of which had a few possible rotations.
 
