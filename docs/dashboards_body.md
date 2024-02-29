@@ -1,35 +1,62 @@
 # Some Thoughts On Dashboards
 
 
-What's a *dashboard*?  In the context of visualization, it's a summary.  It's described
-as something the boss reads regularly to get an overview of how things are going.
-I've never written anything like that.
+What's a *dashboard*?  In the context of visualization, it's a summary.
+
+You've heard Tableau displays described as dashboards when they show a lot of intercconnected views
+of the same information.
+
+You'll hear a short description by Prof. Barber describing a dashboard as something the boss looks
+at as sort of an ongoing status report.
 
 
-Instead, let's use it to mean the summary you bring to your research group when new data
-becomes available.
-* It has a standard form.
-* It describes some new experiment in the context of previous experiments.
+Here's a different model.  When you work on a long term project, the people on your team need to
+track overall progress.  Let's talk about it in that context.
+
+
+
+## Imagine you work on a research project
+
+It will go on for months or years, and there a big team.  Every week or two, there is a meeting
+in which all the leaders get together for a status check.
+
+This is the rhythm of things in real projects.
+
+The 'dashboard' here is the visualization you prepare to update the team on the week's news.
+
+
+You are the team's data scientist.  The project is accumulating data, and each week's data
+(hopefully) improves knowledge of the thing being studied.  But some experiments don't work,
+and in any given week you make only a little progress on the overall data analysis.
+
+
+
+## What do you show your team?
+
+* It has a standard form, to avoid explaining things again and again.
+* It describes some new data in the context of previous data.
 * It tells the group what they need to know to decide on the next steps.
 
-I've written *that* kind of dashboard several times.
+I've written *this* kind of dashboard several times.
 
 
-An important rule of thumb:
+
+## An important rule of thumb:
 * You are the only person who sees 90% of the vis you do.
 * Of the remaining 10%, 90% is for your group.
 * 1% of the time, the visualization will be shown to the world in a paper or at a conference.
 
-The 'dashboard' is for the ~10% that is shown to your group.
-
-
-So what should that sort of dashboard or summary be like?
+The 'dashboard' is part of the ~10% that is shown to your group.
 
 
 
-Let's discuss in the context of a specific example- a fMRI brain imaging experiment.  A new group
-of subjects have been scanned and analyzed.  What do we need to present, and what can be omitted?
-
+## Example: A fMRI brain imaging experiment.
+* Over the course of a year, maybe 100 subjects get scanned.
+* Male and female, test and control.
+ * (Probably all are right handed!)
+ * For the project I was on, test and control were 'Concussed' and 'Recovered'
+* A few scans each week.
+* Some subjects drop out, some scans fail.
 
 
 ### Guiding questions
@@ -38,16 +65,22 @@ happened with this most recent set of subjects.
 
 
 How do these subjects fit in to the larger group?
-* Are they 'typical', or do they differ somehow?
 * What fraction of the total subjects do they represent?
-This suggests a scatter plot, or just a summary table.
+* Are they 'typical', or do they differ somehow?
+
+
+![How many new subjects of what types?](images/dashboard_status_fig.png)
 
 
 How does the data look?
 * What fraction had to be discarded, and (briefly) why?
 * Were these experiments atypical in any way?
+
 Sometimes the scanner doesn't work properly, sometimes the subjects fall asleep.
-Probably bar charts here?
+Bar charts or a table here?
+
+
+![How did these experiments go?](images/dashboard_qual_tbl.png)
 
 
 * What do the in-group results look like?
@@ -57,13 +90,21 @@ Probably bar charts here?
 For this fMRI experiment, this might be activation maps or charts of activation by brain area.
 
 
+### The New Subjects
+![These two subjects](images/dashboard_two_subj.png)
+
+
+### In Context
+![All the subjects](images/dashboard_all_subj.png)
+
+
 
 ### What Not To Show
 
-Some data should not appear at the top level.  People will want to *drill down* to see the details
+Some data should not appear at the top level.  People may want to *drill down* to see the details
 in some cases.
 
-An fMRI example: curves of head motion tracking.  Uncorrected head motion makes leads to bad data,
+An fMRI example: curves of head motion tracking.  Uncorrected head motion leads to bad data,
 so people want to see the curves- but not at the top level.
 
 
@@ -72,7 +113,8 @@ Fancy controls and interface elements should probably not be used.
 * They are great to look at the first few times, but by the 10th or 20th meeting they are annoying.
 
 
-If your group has a logo, show it but keep it small.
+If your group has a logo, show it but keep it small.  Everybody already knows what group
+meeting they are in!
 
 
 
